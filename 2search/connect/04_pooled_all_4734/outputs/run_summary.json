@@ -1,0 +1,90 @@
+{
+  "datasets": 263,
+  "dataset_config_units": 526,
+  "candidate_rows": 4734,
+  "rows_by_ai": {
+    "deepseek": 1578,
+    "chatgpt": 1578,
+    "gemini": 1578
+  },
+  "input_sha256": {
+    "deepseek_12_3_univariate.csv": "d1e495b3ff14a393c4395a3692dad2d823be9267ea5ecce80a0dab7ece295f1c",
+    "chatgpt_12_3_univariate.csv": "c727fb3849bc60b7b9cfaecaa8250659cf84d1d9e54b68ee7757086eef39cd6a",
+    "gemini_12_3_univariate.csv": "4fc3e422b691ee97805a496a93bef54012e2528ec507d72249d92dd17f08ab2b",
+    "deepseek_12_3_multivariate.csv": "bd150346e4f63b974574ddb6ceac66a01773f2a501ca9be399aefc257aa719ea",
+    "chatgpt_12_3_multivariate.csv": "235cb580f3edfa763cb4ee05e8de16e3d3c59dc980fcc39c497bd6a41c9a7f81",
+    "gemini_12_3_multivariate.csv": "532def8fc6d0dc9e7e04d751acc23c7ea6d41154f86157cce03765373531742d",
+    "deepseek_12_12_univariate.csv": "e8dbcf7d1503941d48cb978372dc08221e566c4b52f03e65f857d8efb374f8a9",
+    "chatgpt_12_12_univariate.csv": "fa57900ea1a043c6e2839970d11b9fca1d666e235f58aa401aeaa975117395f2",
+    "gemini_12_12_univariate.csv": "247f10aec9e2259fe1a80bedcfecae037befb444ad8b77e41c2111b1fa1ea7e8",
+    "deepseek_12_12_multivariate.csv": "d1072d0f286d56832a721e3ce453df25a8db080e4fee4250111ac57c1d9e411b",
+    "chatgpt_12_12_multivariate.csv": "b3a04957f5a88a55f5669252b10f84feb3d204dfc45f507f5873d52a216145f6",
+    "gemini_12_12_multivariate.csv": "7220d74cf91f08569e9e0c2d41f6c9e0ca342eec182d7ca68094ee1d36754a17"
+  },
+  "scheme": "Stage-specific tree search (original A settings; B/C/E gain gate 0.002, depth 4) and top-two representatives per module",
+  "model_selection": "Include the top three candidates from each provider for each dataset and configuration (nine total)",
+  "stage_search_params": {
+    "A": {
+      "MAX_DEPTH": 3,
+      "MIN_REL_GAIN": 0.01
+    },
+    "B": {
+      "MAX_DEPTH": 4,
+      "MIN_REL_GAIN": 0.002
+    },
+    "C": {
+      "MAX_DEPTH": 4,
+      "MIN_REL_GAIN": 0.002
+    },
+    "E": {
+      "MAX_DEPTH": 4,
+      "MIN_REL_GAIN": 0.002
+    }
+  },
+  "max_rules_per_module": 2,
+  "n_candidate_pure_rules": 53,
+  "n_full_sa_rules_before_top2": 35,
+  "n_rules": 30,
+  "grades": {
+    "S": 20,
+    "A": 10
+  },
+  "rules_by_stage": {
+    "B": 12,
+    "A": 11,
+    "C": 4,
+    "E": 3
+  },
+  "b_stage_modules_covered": [
+    "Basis Block",
+    "CNN Block",
+    "GRU Block",
+    "LSTM Block",
+    "Linear Block",
+    "MLP Block",
+    "State Space Model Block",
+    "Transformer Encoder Block"
+  ],
+  "config_sha256": "b3911d638740d3933e69e00851a1933034d65b90288322d0001424ecb8edae97",
+  "tree_seed": 1234,
+  "min_leaf": 60,
+  "permutation_count": 1000,
+  "bootstrap_count": 1000,
+  "input_dir": "2search/law_search/inputs",
+  "fixed_rules_sha256": "f3277be6c162238efb5754094d9b254afb970958d609d320fd6cf0015a6c5b14",
+  "code_sha256": {
+    "run.py": "2f65fd2c297c4b241e367288f057f6c21515abdf41322d694a78b38ed6458f3e",
+    "connect_common.py": "fe1220d8097ec046f2d87722e9733e9d1c6ea278ed5f5b779939f5546aadfea3",
+    "build_law_table.py": "b8d11d884d3a7b5df12f38af6e36d95a5538b4dd4d692165b32450eff18864d2",
+    "config.py": "b3911d638740d3933e69e00851a1933034d65b90288322d0001424ecb8edae97",
+    "discover_rules.py": "cc997f0b5e5aa20f38f44ac4d118b593b3153f0e437f7ab243db5b8e41435c7a",
+    "main.py": "5d7788c41724ed1a1e782a3f49b6ea7212373182e2230132c158487ef32b0e20",
+    "prepare_data.py": "f31e005a67ab97fb94b1da37c8e6999a478a9530b6a680eec68f0e620114cd92"
+  },
+  "runtime": {
+    "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.1.2",
+    "pandas": "2.3.1",
+    "sklearn": "1.8.0"
+  }
+}

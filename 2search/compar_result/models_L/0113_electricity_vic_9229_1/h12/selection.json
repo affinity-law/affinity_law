@@ -1,0 +1,80 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "7c8a843a82e2bb7242aae61c0ea89644d304f3b8dd9b77b7aa0c3cc2ffccc3c9",
+    "data": "d020f9694227b4d73ae15019d061f62164b8a7710b22de76cf98f39b272b7173",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Patch"
+    ],
+    "B": [
+      "Basis Block"
+    ],
+    "C": "MLP Head",
+    "E": "Single Block"
+  },
+  "params": 6528,
+  "best_val_rmse": 0.5340890448168638,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.5687955325420035
+    },
+    {
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.5340890448168638
+    },
+    {
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.556340356917072
+    },
+    {
+      "spec": {
+        "A": [
+          "Identity",
+          "Patch"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.5340890448168638
+    }
+  ]
+}

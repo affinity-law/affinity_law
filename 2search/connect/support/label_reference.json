@@ -1,0 +1,101 @@
+{
+  "version": "covered_dataset_median_labels_v2",
+  "method": "Unique datasets, equal weight; linear quantiles 1/3 and 2/3 rounded to 6 decimals. Fixed reference for labels only; original rule thresholds are unchanged.",
+  "closure": "Low: x <= q1; Mid: q1 < x <= q2; High: x > q2",
+  "reference_datasets": 263,
+  "coherence_policy": "Cuts and rule-specific medians use multivariate datasets only; univariate placeholder zeros are excluded from the descriptive statistic, not from original rule membership.",
+  "features": {
+    "distribution_shape_score": {
+      "name_cn": "Distribution shape",
+      "cuts": [
+        0.22309,
+        0.446756
+      ],
+      "reference_n": 263,
+      "bin_counts": [
+        88,
+        87,
+        88
+      ]
+    },
+    "trend_strength_score": {
+      "name_cn": "Trend",
+      "cuts": [
+        0.078543,
+        0.317853
+      ],
+      "reference_n": 263,
+      "bin_counts": [
+        88,
+        87,
+        88
+      ]
+    },
+    "stationarity_score": {
+      "name_cn": "Nonstationarity",
+      "cuts": [
+        0.266024,
+        0.4599
+      ],
+      "reference_n": 263,
+      "bin_counts": [
+        88,
+        87,
+        88
+      ]
+    },
+    "periodicity_score": {
+      "name_cn": "Periodicity",
+      "cuts": [
+        0.309909,
+        0.549271
+      ],
+      "reference_n": 263,
+      "bin_counts": [
+        88,
+        87,
+        88
+      ]
+    },
+    "temporal_dependence_score": {
+      "name_cn": "Temporal dependence",
+      "cuts": [
+        0.400129,
+        0.5789
+      ],
+      "reference_n": 263,
+      "bin_counts": [
+        88,
+        87,
+        88
+      ]
+    },
+    "noise_volatility_score": {
+      "name_cn": "Noise",
+      "cuts": [
+        0.368119,
+        0.487018
+      ],
+      "reference_n": 263,
+      "bin_counts": [
+        88,
+        87,
+        88
+      ]
+    },
+    "multivariate_structure_score": {
+      "name_cn": "Multivariate structure",
+      "cuts": [
+        0.275085,
+        0.514911
+      ],
+      "reference_n": 70,
+      "bin_counts": [
+        24,
+        22,
+        24
+      ]
+    }
+  },
+  "role": "DISPLAY ONLY. Low/Mid/High classify the feature median across unique datasets satisfying all original rule conditions. Never used for discovery, membership, validation or selection."
+}

@@ -1,0 +1,3252 @@
+{
+  "dataset_count": 63,
+  "task_count": 126,
+  "source_root": "external_source",
+  "law_note": "Provenance snapshot only; tuning does not rerun Law model selection.",
+  "tasks": [
+    {
+      "id": "0102_ETTh2_9580_7__h3",
+      "dataset": "0102_ETTh2_9580_7",
+      "horizon": 3,
+      "channels": 7,
+      "length": 9580,
+      "data_path": "data\\external\\01_energy\\multivariate\\0102_ETTh2_9580_7.npy",
+      "model_path": "data\\models_r\\0102_ETTh2_9580_7\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0102_ETTh2_9580_7\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0102_ETTh2_9580_7\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4391
+    },
+    {
+      "id": "0102_ETTh2_9580_7__h12",
+      "dataset": "0102_ETTh2_9580_7",
+      "horizon": 12,
+      "channels": 7,
+      "length": 9580,
+      "data_path": "data\\external\\01_energy\\multivariate\\0102_ETTh2_9580_7.npy",
+      "model_path": "data\\models_r\\0102_ETTh2_9580_7\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0102_ETTh2_9580_7\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0102_ETTh2_9580_7\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4679
+    },
+    {
+      "id": "0113_electricity_vic_9229_1__h3",
+      "dataset": "0113_electricity_vic_9229_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9229,
+      "data_path": "data\\external\\01_energy\\univariate\\0113_electricity_vic_9229_1.npy",
+      "model_path": "data\\models_r\\0113_electricity_vic_9229_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0113_electricity_vic_9229_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0113_electricity_vic_9229_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2315
+    },
+    {
+      "id": "0113_electricity_vic_9229_1__h12",
+      "dataset": "0113_electricity_vic_9229_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9229,
+      "data_path": "data\\external\\01_energy\\univariate\\0113_electricity_vic_9229_1.npy",
+      "model_path": "data\\models_r\\0113_electricity_vic_9229_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0113_electricity_vic_9229_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition",
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0113_electricity_vic_9229_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3769
+    },
+    {
+      "id": "0117_DE_50hertz_load_actual_entsoe_transparency_8819_1__h3",
+      "dataset": "0117_DE_50hertz_load_actual_entsoe_transparency_8819_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1.npy",
+      "model_path": "data\\models_r\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2278
+    },
+    {
+      "id": "0117_DE_50hertz_load_actual_entsoe_transparency_8819_1__h12",
+      "dataset": "0117_DE_50hertz_load_actual_entsoe_transparency_8819_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1.npy",
+      "model_path": "data\\models_r\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0117_DE_50hertz_load_actual_entsoe_transparency_8819_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3613
+    },
+    {
+      "id": "0121_DE_amprion_load_actual_entsoe_transparency_8819_1__h3",
+      "dataset": "0121_DE_amprion_load_actual_entsoe_transparency_8819_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1.npy",
+      "model_path": "data\\models_r\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19513
+    },
+    {
+      "id": "0121_DE_amprion_load_actual_entsoe_transparency_8819_1__h12",
+      "dataset": "0121_DE_amprion_load_actual_entsoe_transparency_8819_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1.npy",
+      "model_path": "data\\models_r\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0121_DE_amprion_load_actual_entsoe_transparency_8819_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20674
+    },
+    {
+      "id": "0124_DE_tennet_wind_generation_actual_8819_1__h3",
+      "dataset": "0124_DE_tennet_wind_generation_actual_8819_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0124_DE_tennet_wind_generation_actual_8819_1.npy",
+      "model_path": "data\\models_r\\0124_DE_tennet_wind_generation_actual_8819_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0124_DE_tennet_wind_generation_actual_8819_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0124_DE_tennet_wind_generation_actual_8819_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3330
+    },
+    {
+      "id": "0124_DE_tennet_wind_generation_actual_8819_1__h12",
+      "dataset": "0124_DE_tennet_wind_generation_actual_8819_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0124_DE_tennet_wind_generation_actual_8819_1.npy",
+      "model_path": "data\\models_r\\0124_DE_tennet_wind_generation_actual_8819_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0124_DE_tennet_wind_generation_actual_8819_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0124_DE_tennet_wind_generation_actual_8819_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3618
+    },
+    {
+      "id": "0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1__h3",
+      "dataset": "0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1.npy",
+      "model_path": "data\\models_r\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch",
+          "Series Decomposition"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2491
+    },
+    {
+      "id": "0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1__h12",
+      "dataset": "0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\01_energy\\univariate\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1.npy",
+      "model_path": "data\\models_r\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0127_DE_transnetbw_load_actual_entsoe_transparency_8819_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3457
+    },
+    {
+      "id": "0133_grid_frequency_hz_9197_1__h3",
+      "dataset": "0133_grid_frequency_hz_9197_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9197,
+      "data_path": "data\\external\\01_energy\\univariate\\0133_grid_frequency_hz_9197_1.npy",
+      "model_path": "data\\models_r\\0133_grid_frequency_hz_9197_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0133_grid_frequency_hz_9197_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0133_grid_frequency_hz_9197_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3409
+    },
+    {
+      "id": "0133_grid_frequency_hz_9197_1__h12",
+      "dataset": "0133_grid_frequency_hz_9197_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9197,
+      "data_path": "data\\external\\01_energy\\univariate\\0133_grid_frequency_hz_9197_1.npy",
+      "model_path": "data\\models_r\\0133_grid_frequency_hz_9197_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0133_grid_frequency_hz_9197_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0133_grid_frequency_hz_9197_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3697
+    },
+    {
+      "id": "0143_DE_LU_load_MW_9206_1__h3",
+      "dataset": "0143_DE_LU_load_MW_9206_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9206,
+      "data_path": "data\\external\\01_energy\\univariate\\0143_DE_LU_load_MW_9206_1.npy",
+      "model_path": "data\\models_r\\0143_DE_LU_load_MW_9206_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0143_DE_LU_load_MW_9206_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0143_DE_LU_load_MW_9206_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19495
+    },
+    {
+      "id": "0143_DE_LU_load_MW_9206_1__h12",
+      "dataset": "0143_DE_LU_load_MW_9206_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9206,
+      "data_path": "data\\external\\01_energy\\univariate\\0143_DE_LU_load_MW_9206_1.npy",
+      "model_path": "data\\models_r\\0143_DE_LU_load_MW_9206_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0143_DE_LU_load_MW_9206_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN",
+          "Patch"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0143_DE_LU_load_MW_9206_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20676
+    },
+    {
+      "id": "0146_NL_load_MW_9206_1__h3",
+      "dataset": "0146_NL_load_MW_9206_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9206,
+      "data_path": "data\\external\\01_energy\\univariate\\0146_NL_load_MW_9206_1.npy",
+      "model_path": "data\\models_r\\0146_NL_load_MW_9206_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0146_NL_load_MW_9206_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0146_NL_load_MW_9206_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2452
+    },
+    {
+      "id": "0146_NL_load_MW_9206_1__h12",
+      "dataset": "0146_NL_load_MW_9206_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9206,
+      "data_path": "data\\external\\01_energy\\univariate\\0146_NL_load_MW_9206_1.npy",
+      "model_path": "data\\models_r\\0146_NL_load_MW_9206_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0146_NL_load_MW_9206_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0146_NL_load_MW_9206_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3613
+    },
+    {
+      "id": "0149_FR_Wind_Production_MWh_8920_1__h3",
+      "dataset": "0149_FR_Wind_Production_MWh_8920_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8920,
+      "data_path": "data\\external\\01_energy\\univariate\\0149_FR_Wind_Production_MWh_8920_1.npy",
+      "model_path": "data\\models_r\\0149_FR_Wind_Production_MWh_8920_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0149_FR_Wind_Production_MWh_8920_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0149_FR_Wind_Production_MWh_8920_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3330
+    },
+    {
+      "id": "0149_FR_Wind_Production_MWh_8920_1__h12",
+      "dataset": "0149_FR_Wind_Production_MWh_8920_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8920,
+      "data_path": "data\\external\\01_energy\\univariate\\0149_FR_Wind_Production_MWh_8920_1.npy",
+      "model_path": "data\\models_r\\0149_FR_Wind_Production_MWh_8920_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0149_FR_Wind_Production_MWh_8920_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0149_FR_Wind_Production_MWh_8920_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3618
+    },
+    {
+      "id": "0152_microgrid_wind_power_output_3546_1__h3",
+      "dataset": "0152_microgrid_wind_power_output_3546_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 3546,
+      "data_path": "data\\external\\01_energy\\univariate\\0152_microgrid_wind_power_output_3546_1.npy",
+      "model_path": "data\\models_r\\0152_microgrid_wind_power_output_3546_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0152_microgrid_wind_power_output_3546_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0152_microgrid_wind_power_output_3546_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2452
+    },
+    {
+      "id": "0152_microgrid_wind_power_output_3546_1__h12",
+      "dataset": "0152_microgrid_wind_power_output_3546_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 3546,
+      "data_path": "data\\external\\01_energy\\univariate\\0152_microgrid_wind_power_output_3546_1.npy",
+      "model_path": "data\\models_r\\0152_microgrid_wind_power_output_3546_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0152_microgrid_wind_power_output_3546_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0152_microgrid_wind_power_output_3546_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3677
+    },
+    {
+      "id": "0158_manufact_energy_agg_8999_1__h3",
+      "dataset": "0158_manufact_energy_agg_8999_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8999,
+      "data_path": "data\\external\\01_energy\\univariate\\0158_manufact_energy_agg_8999_1.npy",
+      "model_path": "data\\models_r\\0158_manufact_energy_agg_8999_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0158_manufact_energy_agg_8999_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0158_manufact_energy_agg_8999_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3389
+    },
+    {
+      "id": "0158_manufact_energy_agg_8999_1__h12",
+      "dataset": "0158_manufact_energy_agg_8999_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8999,
+      "data_path": "data\\external\\01_energy\\univariate\\0158_manufact_energy_agg_8999_1.npy",
+      "model_path": "data\\models_r\\0158_manufact_energy_agg_8999_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0158_manufact_energy_agg_8999_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0158_manufact_energy_agg_8999_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3521
+    },
+    {
+      "id": "0167_smartmeter_H003_Energy_kWh_8784_1__h3",
+      "dataset": "0167_smartmeter_H003_Energy_kWh_8784_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8784,
+      "data_path": "data\\external\\01_energy\\univariate\\0167_smartmeter_H003_Energy_kWh_8784_1.npy",
+      "model_path": "data\\models_r\\0167_smartmeter_H003_Energy_kWh_8784_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0167_smartmeter_H003_Energy_kWh_8784_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0167_smartmeter_H003_Energy_kWh_8784_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19495
+    },
+    {
+      "id": "0167_smartmeter_H003_Energy_kWh_8784_1__h12",
+      "dataset": "0167_smartmeter_H003_Energy_kWh_8784_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8784,
+      "data_path": "data\\external\\01_energy\\univariate\\0167_smartmeter_H003_Energy_kWh_8784_1.npy",
+      "model_path": "data\\models_r\\0167_smartmeter_H003_Energy_kWh_8784_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0167_smartmeter_H003_Energy_kWh_8784_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Gated Fusion",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0167_smartmeter_H003_Energy_kWh_8784_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20658
+    },
+    {
+      "id": "0208_shmetro_inflow_6716_288__h3",
+      "dataset": "0208_shmetro_inflow_6716_288",
+      "horizon": 3,
+      "channels": 288,
+      "length": 6716,
+      "data_path": "data\\external\\02_transportation\\multivariate\\0208_shmetro_inflow_6716_288.npy",
+      "model_path": "data\\models_r\\0208_shmetro_inflow_6716_288\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0208_shmetro_inflow_6716_288\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0208_shmetro_inflow_6716_288\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 57843
+    },
+    {
+      "id": "0208_shmetro_inflow_6716_288__h12",
+      "dataset": "0208_shmetro_inflow_6716_288",
+      "horizon": 12,
+      "channels": 288,
+      "length": 6716,
+      "data_path": "data\\external\\02_transportation\\multivariate\\0208_shmetro_inflow_6716_288.npy",
+      "model_path": "data\\models_r\\0208_shmetro_inflow_6716_288\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0208_shmetro_inflow_6716_288\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0208_shmetro_inflow_6716_288\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 59004
+    },
+    {
+      "id": "0217_hsr01_inflow3_1008_1__h3",
+      "dataset": "0217_hsr01_inflow3_1008_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 1008,
+      "data_path": "data\\external\\02_transportation\\univariate\\0217_hsr01_inflow3_1008_1.npy",
+      "model_path": "data\\models_r\\0217_hsr01_inflow3_1008_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0217_hsr01_inflow3_1008_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0217_hsr01_inflow3_1008_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2278
+    },
+    {
+      "id": "0217_hsr01_inflow3_1008_1__h12",
+      "dataset": "0217_hsr01_inflow3_1008_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 1008,
+      "data_path": "data\\external\\02_transportation\\univariate\\0217_hsr01_inflow3_1008_1.npy",
+      "model_path": "data\\models_r\\0217_hsr01_inflow3_1008_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0217_hsr01_inflow3_1008_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0217_hsr01_inflow3_1008_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3439
+    },
+    {
+      "id": "0221_PEMS03_flow8_9172_1__h3",
+      "dataset": "0221_PEMS03_flow8_9172_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9172,
+      "data_path": "data\\external\\02_transportation\\univariate\\0221_PEMS03_flow8_9172_1.npy",
+      "model_path": "data\\models_r\\0221_PEMS03_flow8_9172_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0221_PEMS03_flow8_9172_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Gated Fusion",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0221_PEMS03_flow8_9172_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2454
+    },
+    {
+      "id": "0221_PEMS03_flow8_9172_1__h12",
+      "dataset": "0221_PEMS03_flow8_9172_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9172,
+      "data_path": "data\\external\\02_transportation\\univariate\\0221_PEMS03_flow8_9172_1.npy",
+      "model_path": "data\\models_r\\0221_PEMS03_flow8_9172_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0221_PEMS03_flow8_9172_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Gated Fusion",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0221_PEMS03_flow8_9172_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3615
+    },
+    {
+      "id": "0227_PEMS08_flow67_9820_1__h3",
+      "dataset": "0227_PEMS08_flow67_9820_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9820,
+      "data_path": "data\\external\\02_transportation\\univariate\\0227_PEMS08_flow67_9820_1.npy",
+      "model_path": "data\\models_r\\0227_PEMS08_flow67_9820_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0227_PEMS08_flow67_9820_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch",
+          "Series Decomposition"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0227_PEMS08_flow67_9820_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2335
+    },
+    {
+      "id": "0227_PEMS08_flow67_9820_1__h12",
+      "dataset": "0227_PEMS08_flow67_9820_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9820,
+      "data_path": "data\\external\\02_transportation\\univariate\\0227_PEMS08_flow67_9820_1.npy",
+      "model_path": "data\\models_r\\0227_PEMS08_flow67_9820_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0227_PEMS08_flow67_9820_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch",
+          "Series Decomposition"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0227_PEMS08_flow67_9820_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3613
+    },
+    {
+      "id": "0230_capitalbike_count_9649_1__h3",
+      "dataset": "0230_capitalbike_count_9649_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9649,
+      "data_path": "data\\external\\02_transportation\\univariate\\0230_capitalbike_count_9649_1.npy",
+      "model_path": "data\\models_r\\0230_capitalbike_count_9649_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0230_capitalbike_count_9649_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0230_capitalbike_count_9649_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19495
+    },
+    {
+      "id": "0230_capitalbike_count_9649_1__h12",
+      "dataset": "0230_capitalbike_count_9649_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9649,
+      "data_path": "data\\external\\02_transportation\\univariate\\0230_capitalbike_count_9649_1.npy",
+      "model_path": "data\\models_r\\0230_capitalbike_count_9649_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0230_capitalbike_count_9649_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0230_capitalbike_count_9649_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20656
+    },
+    {
+      "id": "0233_seoulbike_count_9226_1__h3",
+      "dataset": "0233_seoulbike_count_9226_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9226,
+      "data_path": "data\\external\\02_transportation\\univariate\\0233_seoulbike_count_9226_1.npy",
+      "model_path": "data\\models_r\\0233_seoulbike_count_9226_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0233_seoulbike_count_9226_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0233_seoulbike_count_9226_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2276
+    },
+    {
+      "id": "0233_seoulbike_count_9226_1__h12",
+      "dataset": "0233_seoulbike_count_9226_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9226,
+      "data_path": "data\\external\\02_transportation\\univariate\\0233_seoulbike_count_9226_1.npy",
+      "model_path": "data\\models_r\\0233_seoulbike_count_9226_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0233_seoulbike_count_9226_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0233_seoulbike_count_9226_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3593
+    },
+    {
+      "id": "0239_trafficjunction2_vehicle_9484_1__h3",
+      "dataset": "0239_trafficjunction2_vehicle_9484_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9484,
+      "data_path": "data\\external\\02_transportation\\univariate\\0239_trafficjunction2_vehicle_9484_1.npy",
+      "model_path": "data\\models_r\\0239_trafficjunction2_vehicle_9484_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0239_trafficjunction2_vehicle_9484_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0239_trafficjunction2_vehicle_9484_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2276
+    },
+    {
+      "id": "0239_trafficjunction2_vehicle_9484_1__h12",
+      "dataset": "0239_trafficjunction2_vehicle_9484_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9484,
+      "data_path": "data\\external\\02_transportation\\univariate\\0239_trafficjunction2_vehicle_9484_1.npy",
+      "model_path": "data\\models_r\\0239_trafficjunction2_vehicle_9484_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0239_trafficjunction2_vehicle_9484_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0239_trafficjunction2_vehicle_9484_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3437
+    },
+    {
+      "id": "0245_tsa_lax_pax_9848_1__h3",
+      "dataset": "0245_tsa_lax_pax_9848_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9848,
+      "data_path": "data\\external\\02_transportation\\univariate\\0245_tsa_lax_pax_9848_1.npy",
+      "model_path": "data\\models_r\\0245_tsa_lax_pax_9848_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0245_tsa_lax_pax_9848_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0245_tsa_lax_pax_9848_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3235
+    },
+    {
+      "id": "0245_tsa_lax_pax_9848_1__h12",
+      "dataset": "0245_tsa_lax_pax_9848_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9848,
+      "data_path": "data\\external\\02_transportation\\univariate\\0245_tsa_lax_pax_9848_1.npy",
+      "model_path": "data\\models_r\\0245_tsa_lax_pax_9848_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0245_tsa_lax_pax_9848_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0245_tsa_lax_pax_9848_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3595
+    },
+    {
+      "id": "0248_melbournepedestrian_sensor02_count_9624_1__h3",
+      "dataset": "0248_melbournepedestrian_sensor02_count_9624_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9624,
+      "data_path": "data\\external\\02_transportation\\univariate\\0248_melbournepedestrian_sensor02_count_9624_1.npy",
+      "model_path": "data\\models_r\\0248_melbournepedestrian_sensor02_count_9624_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0248_melbournepedestrian_sensor02_count_9624_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "LSTM Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0248_melbournepedestrian_sensor02_count_9624_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19288
+    },
+    {
+      "id": "0248_melbournepedestrian_sensor02_count_9624_1__h12",
+      "dataset": "0248_melbournepedestrian_sensor02_count_9624_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9624,
+      "data_path": "data\\external\\02_transportation\\univariate\\0248_melbournepedestrian_sensor02_count_9624_1.npy",
+      "model_path": "data\\models_r\\0248_melbournepedestrian_sensor02_count_9624_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0248_melbournepedestrian_sensor02_count_9624_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0248_melbournepedestrian_sensor02_count_9624_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20674
+    },
+    {
+      "id": "0305_Commodity_Stocks_6573_4__h3",
+      "dataset": "0305_Commodity_Stocks_6573_4",
+      "horizon": 3,
+      "channels": 4,
+      "length": 6573,
+      "data_path": "data\\external\\03_finance\\multivariate\\0305_Commodity_Stocks_6573_4.npy",
+      "model_path": "data\\models_r\\0305_Commodity_Stocks_6573_4\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0305_Commodity_Stocks_6573_4\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0305_Commodity_Stocks_6573_4\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3164
+    },
+    {
+      "id": "0305_Commodity_Stocks_6573_4__h12",
+      "dataset": "0305_Commodity_Stocks_6573_4",
+      "horizon": 12,
+      "channels": 4,
+      "length": 6573,
+      "data_path": "data\\external\\03_finance\\multivariate\\0305_Commodity_Stocks_6573_4.npy",
+      "model_path": "data\\models_r\\0305_Commodity_Stocks_6573_4\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0305_Commodity_Stocks_6573_4\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0305_Commodity_Stocks_6573_4\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3452
+    },
+    {
+      "id": "0310_Forex_Volatility_7026_4__h3",
+      "dataset": "0310_Forex_Volatility_7026_4",
+      "horizon": 3,
+      "channels": 4,
+      "length": 7026,
+      "data_path": "data\\external\\03_finance\\multivariate\\0310_Forex_Volatility_7026_4.npy",
+      "model_path": "data\\models_r\\0310_Forex_Volatility_7026_4\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0310_Forex_Volatility_7026_4\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing",
+          "RevIN"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0310_Forex_Volatility_7026_4\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3464
+    },
+    {
+      "id": "0310_Forex_Volatility_7026_4__h12",
+      "dataset": "0310_Forex_Volatility_7026_4",
+      "horizon": 12,
+      "channels": 4,
+      "length": 7026,
+      "data_path": "data\\external\\03_finance\\multivariate\\0310_Forex_Volatility_7026_4.npy",
+      "model_path": "data\\models_r\\0310_Forex_Volatility_7026_4\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0310_Forex_Volatility_7026_4\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0310_Forex_Volatility_7026_4\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3660
+    },
+    {
+      "id": "0313_JPM_Close_6573_1__h3",
+      "dataset": "0313_JPM_Close_6573_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 6573,
+      "data_path": "data\\external\\03_finance\\univariate\\0313_JPM_Close_6573_1.npy",
+      "model_path": "data\\models_r\\0313_JPM_Close_6573_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0313_JPM_Close_6573_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0313_JPM_Close_6573_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2207
+    },
+    {
+      "id": "0313_JPM_Close_6573_1__h12",
+      "dataset": "0313_JPM_Close_6573_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 6573,
+      "data_path": "data\\external\\03_finance\\univariate\\0313_JPM_Close_6573_1.npy",
+      "model_path": "data\\models_r\\0313_JPM_Close_6573_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0313_JPM_Close_6573_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0313_JPM_Close_6573_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3368
+    },
+    {
+      "id": "0322_SP500_Index_9860_1__h3",
+      "dataset": "0322_SP500_Index_9860_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9860,
+      "data_path": "data\\external\\03_finance\\univariate\\0322_SP500_Index_9860_1.npy",
+      "model_path": "data\\models_r\\0322_SP500_Index_9860_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0322_SP500_Index_9860_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0322_SP500_Index_9860_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3164
+    },
+    {
+      "id": "0322_SP500_Index_9860_1__h12",
+      "dataset": "0322_SP500_Index_9860_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9860,
+      "data_path": "data\\external\\03_finance\\univariate\\0322_SP500_Index_9860_1.npy",
+      "model_path": "data\\models_r\\0322_SP500_Index_9860_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0322_SP500_Index_9860_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0322_SP500_Index_9860_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3452
+    },
+    {
+      "id": "0323_Nikkei225_Index_9768_1__h3",
+      "dataset": "0323_Nikkei225_Index_9768_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9768,
+      "data_path": "data\\external\\03_finance\\univariate\\0323_Nikkei225_Index_9768_1.npy",
+      "model_path": "data\\models_r\\0323_Nikkei225_Index_9768_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0323_Nikkei225_Index_9768_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0323_Nikkei225_Index_9768_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2432
+    },
+    {
+      "id": "0323_Nikkei225_Index_9768_1__h12",
+      "dataset": "0323_Nikkei225_Index_9768_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9768,
+      "data_path": "data\\external\\03_finance\\univariate\\0323_Nikkei225_Index_9768_1.npy",
+      "model_path": "data\\models_r\\0323_Nikkei225_Index_9768_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0323_Nikkei225_Index_9768_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0323_Nikkei225_Index_9768_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3593
+    },
+    {
+      "id": "0331_US2Y_Yield_6651_1__h3",
+      "dataset": "0331_US2Y_Yield_6651_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 6376,
+      "data_path": "data\\external\\03_finance\\univariate\\0331_US2Y_Yield_6651_1.npy",
+      "model_path": "data\\models_r\\0331_US2Y_Yield_6651_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0331_US2Y_Yield_6651_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing",
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0331_US2Y_Yield_6651_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2207
+    },
+    {
+      "id": "0331_US2Y_Yield_6651_1__h12",
+      "dataset": "0331_US2Y_Yield_6651_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 6376,
+      "data_path": "data\\external\\03_finance\\univariate\\0331_US2Y_Yield_6651_1.npy",
+      "model_path": "data\\models_r\\0331_US2Y_Yield_6651_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0331_US2Y_Yield_6651_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0331_US2Y_Yield_6651_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3368
+    },
+    {
+      "id": "0337_Fed_Funds_Rate_9313_1__h3",
+      "dataset": "0337_Fed_Funds_Rate_9313_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9313,
+      "data_path": "data\\external\\03_finance\\univariate\\0337_Fed_Funds_Rate_9313_1.npy",
+      "model_path": "data\\models_r\\0337_Fed_Funds_Rate_9313_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0337_Fed_Funds_Rate_9313_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Linear Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0337_Fed_Funds_Rate_9313_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2432
+    },
+    {
+      "id": "0337_Fed_Funds_Rate_9313_1__h12",
+      "dataset": "0337_Fed_Funds_Rate_9313_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9313,
+      "data_path": "data\\external\\03_finance\\univariate\\0337_Fed_Funds_Rate_9313_1.npy",
+      "model_path": "data\\models_r\\0337_Fed_Funds_Rate_9313_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0337_Fed_Funds_Rate_9313_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0337_Fed_Funds_Rate_9313_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3593
+    },
+    {
+      "id": "0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7__h3",
+      "dataset": "0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7",
+      "horizon": 3,
+      "channels": 7,
+      "length": 2311,
+      "data_path": "data\\external\\04_sales\\multivariate\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7.npy",
+      "model_path": "data\\models_r\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block",
+          "State Space Model Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3651
+    },
+    {
+      "id": "0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7__h12",
+      "dataset": "0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7",
+      "horizon": 12,
+      "channels": 7,
+      "length": 2311,
+      "data_path": "data\\external\\04_sales\\multivariate\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7.npy",
+      "model_path": "data\\models_r\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0406_Dubai_Real_Estate_Sales_Rentals_20202026_2311_7\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3939
+    },
+    {
+      "id": "0415_Apple_Retail_Sales_Dataset_1778_1__h3",
+      "dataset": "0415_Apple_Retail_Sales_Dataset_1778_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 1778,
+      "data_path": "data\\external\\04_sales\\univariate\\0415_Apple_Retail_Sales_Dataset_1778_1.npy",
+      "model_path": "data\\models_r\\0415_Apple_Retail_Sales_Dataset_1778_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0415_Apple_Retail_Sales_Dataset_1778_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "State Space Model Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0415_Apple_Retail_Sales_Dataset_1778_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3350
+    },
+    {
+      "id": "0415_Apple_Retail_Sales_Dataset_1778_1__h12",
+      "dataset": "0415_Apple_Retail_Sales_Dataset_1778_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 1778,
+      "data_path": "data\\external\\04_sales\\univariate\\0415_Apple_Retail_Sales_Dataset_1778_1.npy",
+      "model_path": "data\\models_r\\0415_Apple_Retail_Sales_Dataset_1778_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0415_Apple_Retail_Sales_Dataset_1778_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0415_Apple_Retail_Sales_Dataset_1778_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3413
+    },
+    {
+      "id": "0418_sushi_restaurant_daily_revenue_3653_1__h3",
+      "dataset": "0418_sushi_restaurant_daily_revenue_3653_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 3653,
+      "data_path": "data\\external\\04_sales\\univariate\\0418_sushi_restaurant_daily_revenue_3653_1.npy",
+      "model_path": "data\\models_r\\0418_sushi_restaurant_daily_revenue_3653_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0418_sushi_restaurant_daily_revenue_3653_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score",
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0418_sushi_restaurant_daily_revenue_3653_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19495
+    },
+    {
+      "id": "0418_sushi_restaurant_daily_revenue_3653_1__h12",
+      "dataset": "0418_sushi_restaurant_daily_revenue_3653_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 3653,
+      "data_path": "data\\external\\04_sales\\univariate\\0418_sushi_restaurant_daily_revenue_3653_1.npy",
+      "model_path": "data\\models_r\\0418_sushi_restaurant_daily_revenue_3653_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0418_sushi_restaurant_daily_revenue_3653_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0418_sushi_restaurant_daily_revenue_3653_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20656
+    },
+    {
+      "id": "0421_Ecommerce_Dataset_4151_1__h3",
+      "dataset": "0421_Ecommerce_Dataset_4151_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 4151,
+      "data_path": "data\\external\\04_sales\\univariate\\0421_Ecommerce_Dataset_4151_1.npy",
+      "model_path": "data\\models_r\\0421_Ecommerce_Dataset_4151_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0421_Ecommerce_Dataset_4151_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0421_Ecommerce_Dataset_4151_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2434
+    },
+    {
+      "id": "0421_Ecommerce_Dataset_4151_1__h12",
+      "dataset": "0421_Ecommerce_Dataset_4151_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 4151,
+      "data_path": "data\\external\\04_sales\\univariate\\0421_Ecommerce_Dataset_4151_1.npy",
+      "model_path": "data\\models_r\\0421_Ecommerce_Dataset_4151_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0421_Ecommerce_Dataset_4151_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0421_Ecommerce_Dataset_4151_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3595
+    },
+    {
+      "id": "0506_twitter_volume_9498_10__h3",
+      "dataset": "0506_twitter_volume_9498_10",
+      "horizon": 3,
+      "channels": 10,
+      "length": 9498,
+      "data_path": "data\\external\\05_network\\multivariate\\0506_twitter_volume_9498_10.npy",
+      "model_path": "data\\models_r\\0506_twitter_volume_9498_10\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0506_twitter_volume_9498_10\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition"
+        ],
+        "B": [
+          "TCN Block",
+          "State Space Model Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0506_twitter_volume_9498_10\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4734
+    },
+    {
+      "id": "0506_twitter_volume_9498_10__h12",
+      "dataset": "0506_twitter_volume_9498_10",
+      "horizon": 12,
+      "channels": 10,
+      "length": 9498,
+      "data_path": "data\\external\\05_network\\multivariate\\0506_twitter_volume_9498_10.npy",
+      "model_path": "data\\models_r\\0506_twitter_volume_9498_10\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0506_twitter_volume_9498_10\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0506_twitter_volume_9498_10\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5876
+    },
+    {
+      "id": "0508_ec2_network_in_257a54_4032_1__h3",
+      "dataset": "0508_ec2_network_in_257a54_4032_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 4032,
+      "data_path": "data\\external\\05_network\\univariate\\0508_ec2_network_in_257a54_4032_1.npy",
+      "model_path": "data\\models_r\\0508_ec2_network_in_257a54_4032_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0508_ec2_network_in_257a54_4032_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0508_ec2_network_in_257a54_4032_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2276
+    },
+    {
+      "id": "0508_ec2_network_in_257a54_4032_1__h12",
+      "dataset": "0508_ec2_network_in_257a54_4032_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 4032,
+      "data_path": "data\\external\\05_network\\univariate\\0508_ec2_network_in_257a54_4032_1.npy",
+      "model_path": "data\\models_r\\0508_ec2_network_in_257a54_4032_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0508_ec2_network_in_257a54_4032_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0508_ec2_network_in_257a54_4032_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3593
+    },
+    {
+      "id": "0517_cesnet_ip_259860_n_bytes_6717_1__h3",
+      "dataset": "0517_cesnet_ip_259860_n_bytes_6717_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 6717,
+      "data_path": "data\\external\\05_network\\univariate\\0517_cesnet_ip_259860_n_bytes_6717_1.npy",
+      "model_path": "data\\models_r\\0517_cesnet_ip_259860_n_bytes_6717_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0517_cesnet_ip_259860_n_bytes_6717_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0517_cesnet_ip_259860_n_bytes_6717_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3330
+    },
+    {
+      "id": "0517_cesnet_ip_259860_n_bytes_6717_1__h12",
+      "dataset": "0517_cesnet_ip_259860_n_bytes_6717_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 6717,
+      "data_path": "data\\external\\05_network\\univariate\\0517_cesnet_ip_259860_n_bytes_6717_1.npy",
+      "model_path": "data\\models_r\\0517_cesnet_ip_259860_n_bytes_6717_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0517_cesnet_ip_259860_n_bytes_6717_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0517_cesnet_ip_259860_n_bytes_6717_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3618
+    },
+    {
+      "id": "0523_kaggle_web_android_zh_spider_803_1__h3",
+      "dataset": "0523_kaggle_web_android_zh_spider_803_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 803,
+      "data_path": "data\\external\\05_network\\univariate\\0523_kaggle_web_android_zh_spider_803_1.npy",
+      "model_path": "data\\models_r\\0523_kaggle_web_android_zh_spider_803_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0523_kaggle_web_android_zh_spider_803_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0523_kaggle_web_android_zh_spider_803_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2434
+    },
+    {
+      "id": "0523_kaggle_web_android_zh_spider_803_1__h12",
+      "dataset": "0523_kaggle_web_android_zh_spider_803_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 803,
+      "data_path": "data\\external\\05_network\\univariate\\0523_kaggle_web_android_zh_spider_803_1.npy",
+      "model_path": "data\\models_r\\0523_kaggle_web_android_zh_spider_803_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0523_kaggle_web_android_zh_spider_803_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0523_kaggle_web_android_zh_spider_803_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3595
+    },
+    {
+      "id": "0603_Beijing_Dingling_AirPollutionMeteorology_9817_11__h3",
+      "dataset": "0603_Beijing_Dingling_AirPollutionMeteorology_9817_11",
+      "horizon": 3,
+      "channels": 11,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\multivariate\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11.npy",
+      "model_path": "data\\models_r\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5930
+    },
+    {
+      "id": "0603_Beijing_Dingling_AirPollutionMeteorology_9817_11__h12",
+      "dataset": "0603_Beijing_Dingling_AirPollutionMeteorology_9817_11",
+      "horizon": 12,
+      "channels": 11,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\multivariate\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11.npy",
+      "model_path": "data\\models_r\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0603_Beijing_Dingling_AirPollutionMeteorology_9817_11\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 6218
+    },
+    {
+      "id": "0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6__h3",
+      "dataset": "0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6",
+      "horizon": 3,
+      "channels": 6,
+      "length": 6940,
+      "data_path": "data\\external\\06_nature\\multivariate\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6.npy",
+      "model_path": "data\\models_r\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4374
+    },
+    {
+      "id": "0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6__h12",
+      "dataset": "0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6",
+      "horizon": 12,
+      "channels": 6,
+      "length": 6940,
+      "data_path": "data\\external\\06_nature\\multivariate\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6.npy",
+      "model_path": "data\\models_r\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0608_USA_NewYork_NOAA_DailyTemperatureRelativeHumidityWindSpeed_6940_6\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4578
+    },
+    {
+      "id": "0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1__h3",
+      "dataset": "0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\univariate\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1.npy",
+      "model_path": "data\\models_r\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "TCN Block",
+          "State Space Model Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3330
+    },
+    {
+      "id": "0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1__h12",
+      "dataset": "0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\univariate\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1.npy",
+      "model_path": "data\\models_r\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0611_Beijing_Aotizhongxin_FineParticulateMatterConcentration_9817_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3393
+    },
+    {
+      "id": "0617_Beijing_Changping_AirTemperature_9817_1__h3",
+      "dataset": "0617_Beijing_Changping_AirTemperature_9817_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\univariate\\0617_Beijing_Changping_AirTemperature_9817_1.npy",
+      "model_path": "data\\models_r\\0617_Beijing_Changping_AirTemperature_9817_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0617_Beijing_Changping_AirTemperature_9817_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0617_Beijing_Changping_AirTemperature_9817_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19270
+    },
+    {
+      "id": "0617_Beijing_Changping_AirTemperature_9817_1__h12",
+      "dataset": "0617_Beijing_Changping_AirTemperature_9817_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\univariate\\0617_Beijing_Changping_AirTemperature_9817_1.npy",
+      "model_path": "data\\models_r\\0617_Beijing_Changping_AirTemperature_9817_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0617_Beijing_Changping_AirTemperature_9817_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0617_Beijing_Changping_AirTemperature_9817_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20431
+    },
+    {
+      "id": "0625_Beijing_Dongsi_AirTemperature_9817_1__h3",
+      "dataset": "0625_Beijing_Dongsi_AirTemperature_9817_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\univariate\\0625_Beijing_Dongsi_AirTemperature_9817_1.npy",
+      "model_path": "data\\models_r\\0625_Beijing_Dongsi_AirTemperature_9817_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0625_Beijing_Dongsi_AirTemperature_9817_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing",
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0625_Beijing_Dongsi_AirTemperature_9817_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19270
+    },
+    {
+      "id": "0625_Beijing_Dongsi_AirTemperature_9817_1__h12",
+      "dataset": "0625_Beijing_Dongsi_AirTemperature_9817_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9817,
+      "data_path": "data\\external\\06_nature\\univariate\\0625_Beijing_Dongsi_AirTemperature_9817_1.npy",
+      "model_path": "data\\models_r\\0625_Beijing_Dongsi_AirTemperature_9817_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0625_Beijing_Dongsi_AirTemperature_9817_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "LSTM Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0625_Beijing_Dongsi_AirTemperature_9817_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20431
+    },
+    {
+      "id": "0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1__h3",
+      "dataset": "0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9357,
+      "data_path": "data\\external\\06_nature\\univariate\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1.npy",
+      "model_path": "data\\models_r\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition",
+          "Patch"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19552
+    },
+    {
+      "id": "0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1__h12",
+      "dataset": "0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9357,
+      "data_path": "data\\external\\06_nature\\univariate\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1.npy",
+      "model_path": "data\\models_r\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0629_Italy_NonMethaneHydrocarbonRelatedGasSensorResponse_9357_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20674
+    },
+    {
+      "id": "0640_australia_maxtemp_T7_9772_1__h3",
+      "dataset": "0640_australia_maxtemp_T7_9772_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9772,
+      "data_path": "data\\external\\06_nature\\univariate\\0640_australia_maxtemp_T7_9772_1.npy",
+      "model_path": "data\\models_r\\0640_australia_maxtemp_T7_9772_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0640_australia_maxtemp_T7_9772_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0640_australia_maxtemp_T7_9772_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2296
+    },
+    {
+      "id": "0640_australia_maxtemp_T7_9772_1__h12",
+      "dataset": "0640_australia_maxtemp_T7_9772_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9772,
+      "data_path": "data\\external\\06_nature\\univariate\\0640_australia_maxtemp_T7_9772_1.npy",
+      "model_path": "data\\models_r\\0640_australia_maxtemp_T7_9772_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0640_australia_maxtemp_T7_9772_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "LSTM Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0640_australia_maxtemp_T7_9772_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20449
+    },
+    {
+      "id": "0644_australia_solar_radiation_T7_9745_1__h3",
+      "dataset": "0644_australia_solar_radiation_T7_9745_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9745,
+      "data_path": "data\\external\\06_nature\\univariate\\0644_australia_solar_radiation_T7_9745_1.npy",
+      "model_path": "data\\models_r\\0644_australia_solar_radiation_T7_9745_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0644_australia_solar_radiation_T7_9745_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0644_australia_solar_radiation_T7_9745_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19513
+    },
+    {
+      "id": "0644_australia_solar_radiation_T7_9745_1__h12",
+      "dataset": "0644_australia_solar_radiation_T7_9745_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9745,
+      "data_path": "data\\external\\06_nature\\univariate\\0644_australia_solar_radiation_T7_9745_1.npy",
+      "model_path": "data\\models_r\\0644_australia_solar_radiation_T7_9745_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0644_australia_solar_radiation_T7_9745_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "LSTM Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0644_australia_solar_radiation_T7_9745_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20674
+    },
+    {
+      "id": "0702_fluview_hhs8_weighted_ili_1405_1__h3",
+      "dataset": "0702_fluview_hhs8_weighted_ili_1405_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 1405,
+      "data_path": "data\\external\\07_healthcare\\univariate\\0702_fluview_hhs8_weighted_ili_1405_1.npy",
+      "model_path": "data\\models_r\\0702_fluview_hhs8_weighted_ili_1405_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0702_fluview_hhs8_weighted_ili_1405_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing",
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0702_fluview_hhs8_weighted_ili_1405_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2434
+    },
+    {
+      "id": "0702_fluview_hhs8_weighted_ili_1405_1__h12",
+      "dataset": "0702_fluview_hhs8_weighted_ili_1405_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 1405,
+      "data_path": "data\\external\\07_healthcare\\univariate\\0702_fluview_hhs8_weighted_ili_1405_1.npy",
+      "model_path": "data\\models_r\\0702_fluview_hhs8_weighted_ili_1405_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0702_fluview_hhs8_weighted_ili_1405_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0702_fluview_hhs8_weighted_ili_1405_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3437
+    },
+    {
+      "id": "0710_hospital_tx_inpatient_beds_utilization_1579_1__h3",
+      "dataset": "0710_hospital_tx_inpatient_beds_utilization_1579_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 1579,
+      "data_path": "data\\external\\07_healthcare\\univariate\\0710_hospital_tx_inpatient_beds_utilization_1579_1.npy",
+      "model_path": "data\\models_r\\0710_hospital_tx_inpatient_beds_utilization_1579_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0710_hospital_tx_inpatient_beds_utilization_1579_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0710_hospital_tx_inpatient_beds_utilization_1579_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3233
+    },
+    {
+      "id": "0710_hospital_tx_inpatient_beds_utilization_1579_1__h12",
+      "dataset": "0710_hospital_tx_inpatient_beds_utilization_1579_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 1579,
+      "data_path": "data\\external\\07_healthcare\\univariate\\0710_hospital_tx_inpatient_beds_utilization_1579_1.npy",
+      "model_path": "data\\models_r\\0710_hospital_tx_inpatient_beds_utilization_1579_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0710_hospital_tx_inpatient_beds_utilization_1579_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0710_hospital_tx_inpatient_beds_utilization_1579_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3454
+    },
+    {
+      "id": "0718_bidmc05_ii_waveform_8819_1__h3",
+      "dataset": "0718_bidmc05_ii_waveform_8819_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\07_healthcare\\univariate\\0718_bidmc05_ii_waveform_8819_1.npy",
+      "model_path": "data\\models_r\\0718_bidmc05_ii_waveform_8819_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0718_bidmc05_ii_waveform_8819_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0718_bidmc05_ii_waveform_8819_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2452
+    },
+    {
+      "id": "0718_bidmc05_ii_waveform_8819_1__h12",
+      "dataset": "0718_bidmc05_ii_waveform_8819_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8819,
+      "data_path": "data\\external\\07_healthcare\\univariate\\0718_bidmc05_ii_waveform_8819_1.npy",
+      "model_path": "data\\models_r\\0718_bidmc05_ii_waveform_8819_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0718_bidmc05_ii_waveform_8819_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0718_bidmc05_ii_waveform_8819_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3613
+    },
+    {
+      "id": "0727_bidmc01_vital_signs_multivariate_8819_5__h3",
+      "dataset": "0727_bidmc01_vital_signs_multivariate_8819_5",
+      "horizon": 3,
+      "channels": 5,
+      "length": 8819,
+      "data_path": "data\\external\\07_healthcare\\multivariate\\0727_bidmc01_vital_signs_multivariate_8819_5.npy",
+      "model_path": "data\\models_r\\0727_bidmc01_vital_signs_multivariate_8819_5\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0727_bidmc01_vital_signs_multivariate_8819_5\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0727_bidmc01_vital_signs_multivariate_8819_5\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3224
+    },
+    {
+      "id": "0727_bidmc01_vital_signs_multivariate_8819_5__h12",
+      "dataset": "0727_bidmc01_vital_signs_multivariate_8819_5",
+      "horizon": 12,
+      "channels": 5,
+      "length": 8819,
+      "data_path": "data\\external\\07_healthcare\\multivariate\\0727_bidmc01_vital_signs_multivariate_8819_5.npy",
+      "model_path": "data\\models_r\\0727_bidmc01_vital_signs_multivariate_8819_5\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0727_bidmc01_vital_signs_multivariate_8819_5\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "Linear Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0727_bidmc01_vital_signs_multivariate_8819_5\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4385
+    },
+    {
+      "id": "0801_melbourne_9609_8__h3",
+      "dataset": "0801_melbourne_9609_8",
+      "horizon": 3,
+      "channels": 8,
+      "length": 9609,
+      "data_path": "data\\external\\08_social_statistics\\multivariate\\0801_melbourne_9609_8.npy",
+      "model_path": "data\\models_r\\0801_melbourne_9609_8\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0801_melbourne_9609_8\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0801_melbourne_9609_8\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4179
+    },
+    {
+      "id": "0801_melbourne_9609_8__h12",
+      "dataset": "0801_melbourne_9609_8",
+      "horizon": 12,
+      "channels": 8,
+      "length": 9609,
+      "data_path": "data\\external\\08_social_statistics\\multivariate\\0801_melbourne_9609_8.npy",
+      "model_path": "data\\models_r\\0801_melbourne_9609_8\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0801_melbourne_9609_8\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "TCN Block",
+          "State Space Model Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0801_melbourne_9609_8\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5424
+    },
+    {
+      "id": "0810_ssa_5479_1__h3",
+      "dataset": "0810_ssa_5479_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 5479,
+      "data_path": "data\\external\\08_social_statistics\\univariate\\0810_ssa_5479_1.npy",
+      "model_path": "data\\models_r\\0810_ssa_5479_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0810_ssa_5479_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0810_ssa_5479_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2296
+    },
+    {
+      "id": "0810_ssa_5479_1__h12",
+      "dataset": "0810_ssa_5479_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 5479,
+      "data_path": "data\\external\\08_social_statistics\\univariate\\0810_ssa_5479_1.npy",
+      "model_path": "data\\models_r\\0810_ssa_5479_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0810_ssa_5479_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition",
+          "Patch"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0810_ssa_5479_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3613
+    },
+    {
+      "id": "0814_workplace_974_1__h3",
+      "dataset": "0814_workplace_974_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 974,
+      "data_path": "data\\external\\08_social_statistics\\univariate\\0814_workplace_974_1.npy",
+      "model_path": "data\\models_r\\0814_workplace_974_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0814_workplace_974_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN",
+          "Differencing"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0814_workplace_974_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 19495
+    },
+    {
+      "id": "0814_workplace_974_1__h12",
+      "dataset": "0814_workplace_974_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 974,
+      "data_path": "data\\external\\08_social_statistics\\univariate\\0814_workplace_974_1.npy",
+      "model_path": "data\\models_r\\0814_workplace_974_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0814_workplace_974_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "LSTM Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0814_workplace_974_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 20654
+    },
+    {
+      "id": "0820_airbnb_edinburgh_4588_1__h3",
+      "dataset": "0820_airbnb_edinburgh_4588_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 4588,
+      "data_path": "data\\external\\08_social_statistics\\univariate\\0820_airbnb_edinburgh_4588_1.npy",
+      "model_path": "data\\models_r\\0820_airbnb_edinburgh_4588_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0820_airbnb_edinburgh_4588_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score",
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0820_airbnb_edinburgh_4588_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2278
+    },
+    {
+      "id": "0820_airbnb_edinburgh_4588_1__h12",
+      "dataset": "0820_airbnb_edinburgh_4588_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 4588,
+      "data_path": "data\\external\\08_social_statistics\\univariate\\0820_airbnb_edinburgh_4588_1.npy",
+      "model_path": "data\\models_r\\0820_airbnb_edinburgh_4588_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0820_airbnb_edinburgh_4588_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0820_airbnb_edinburgh_4588_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3439
+    },
+    {
+      "id": "0902_UCIHydraulic_2205_17__h3",
+      "dataset": "0902_UCIHydraulic_2205_17",
+      "horizon": 3,
+      "channels": 17,
+      "length": 2205,
+      "data_path": "data\\external\\09_other\\multivariate\\0902_UCIHydraulic_2205_17.npy",
+      "model_path": "data\\models_r\\0902_UCIHydraulic_2205_17\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0902_UCIHydraulic_2205_17\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0902_UCIHydraulic_2205_17\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2207
+    },
+    {
+      "id": "0902_UCIHydraulic_2205_17__h12",
+      "dataset": "0902_UCIHydraulic_2205_17",
+      "horizon": 12,
+      "channels": 17,
+      "length": 2205,
+      "data_path": "data\\external\\09_other\\multivariate\\0902_UCIHydraulic_2205_17.npy",
+      "model_path": "data\\models_r\\0902_UCIHydraulic_2205_17\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0902_UCIHydraulic_2205_17\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0902_UCIHydraulic_2205_17\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3368
+    },
+    {
+      "id": "0910_Bearing3_2156_1__h3",
+      "dataset": "0910_Bearing3_2156_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 2156,
+      "data_path": "data\\external\\09_other\\univariate\\0910_Bearing3_2156_1.npy",
+      "model_path": "data\\models_r\\0910_Bearing3_2156_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0910_Bearing3_2156_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0910_Bearing3_2156_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2148
+    },
+    {
+      "id": "0910_Bearing3_2156_1__h12",
+      "dataset": "0910_Bearing3_2156_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 2156,
+      "data_path": "data\\external\\09_other\\univariate\\0910_Bearing3_2156_1.npy",
+      "model_path": "data\\models_r\\0910_Bearing3_2156_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0910_Bearing3_2156_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0910_Bearing3_2156_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3309
+    },
+    {
+      "id": "0916_WaveEnergyConverters_Adelaide_7199_9__h3",
+      "dataset": "0916_WaveEnergyConverters_Adelaide_7199_9",
+      "horizon": 3,
+      "channels": 9,
+      "length": 7199,
+      "data_path": "data\\external\\09_other\\multivariate\\0916_WaveEnergyConverters_Adelaide_7199_9.npy",
+      "model_path": "data\\models_r\\0916_WaveEnergyConverters_Adelaide_7199_9\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0916_WaveEnergyConverters_Adelaide_7199_9\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0916_WaveEnergyConverters_Adelaide_7199_9\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 4455
+    },
+    {
+      "id": "0916_WaveEnergyConverters_Adelaide_7199_9__h12",
+      "dataset": "0916_WaveEnergyConverters_Adelaide_7199_9",
+      "horizon": 12,
+      "channels": 9,
+      "length": 7199,
+      "data_path": "data\\external\\09_other\\multivariate\\0916_WaveEnergyConverters_Adelaide_7199_9.npy",
+      "model_path": "data\\models_r\\0916_WaveEnergyConverters_Adelaide_7199_9\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0916_WaveEnergyConverters_Adelaide_7199_9\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0916_WaveEnergyConverters_Adelaide_7199_9\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5616
+    },
+    {
+      "id": "0918_WaveEnergyConverters_Tasmania_7200_9__h3",
+      "dataset": "0918_WaveEnergyConverters_Tasmania_7200_9",
+      "horizon": 3,
+      "channels": 9,
+      "length": 7200,
+      "data_path": "data\\external\\09_other\\multivariate\\0918_WaveEnergyConverters_Tasmania_7200_9.npy",
+      "model_path": "data\\models_r\\0918_WaveEnergyConverters_Tasmania_7200_9\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0918_WaveEnergyConverters_Tasmania_7200_9\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0918_WaveEnergyConverters_Tasmania_7200_9\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5394
+    },
+    {
+      "id": "0918_WaveEnergyConverters_Tasmania_7200_9__h12",
+      "dataset": "0918_WaveEnergyConverters_Tasmania_7200_9",
+      "horizon": 12,
+      "channels": 9,
+      "length": 7200,
+      "data_path": "data\\external\\09_other\\multivariate\\0918_WaveEnergyConverters_Tasmania_7200_9.npy",
+      "model_path": "data\\models_r\\0918_WaveEnergyConverters_Tasmania_7200_9\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0918_WaveEnergyConverters_Tasmania_7200_9\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0918_WaveEnergyConverters_Tasmania_7200_9\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5682
+    },
+    {
+      "id": "0919_GasTurbine_Emission_7346_10__h3",
+      "dataset": "0919_GasTurbine_Emission_7346_10",
+      "horizon": 3,
+      "channels": 10,
+      "length": 7346,
+      "data_path": "data\\external\\09_other\\multivariate\\0919_GasTurbine_Emission_7346_10.npy",
+      "model_path": "data\\models_r\\0919_GasTurbine_Emission_7346_10\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0919_GasTurbine_Emission_7346_10\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0919_GasTurbine_Emission_7346_10\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 5691
+    },
+    {
+      "id": "0919_GasTurbine_Emission_7346_10__h12",
+      "dataset": "0919_GasTurbine_Emission_7346_10",
+      "horizon": 12,
+      "channels": 10,
+      "length": 7346,
+      "data_path": "data\\external\\09_other\\multivariate\\0919_GasTurbine_Emission_7346_10.npy",
+      "model_path": "data\\models_r\\0919_GasTurbine_Emission_7346_10\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0919_GasTurbine_Emission_7346_10\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Series Decomposition"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0919_GasTurbine_Emission_7346_10\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 6096
+    },
+    {
+      "id": "0921_SantaFe_Laser_9083_1__h3",
+      "dataset": "0921_SantaFe_Laser_9083_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 9083,
+      "data_path": "data\\external\\09_other\\univariate\\0921_SantaFe_Laser_9083_1.npy",
+      "model_path": "data\\models_r\\0921_SantaFe_Laser_9083_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0921_SantaFe_Laser_9083_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0921_SantaFe_Laser_9083_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2393
+    },
+    {
+      "id": "0921_SantaFe_Laser_9083_1__h12",
+      "dataset": "0921_SantaFe_Laser_9083_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 9083,
+      "data_path": "data\\external\\09_other\\univariate\\0921_SantaFe_Laser_9083_1.npy",
+      "model_path": "data\\models_r\\0921_SantaFe_Laser_9083_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0921_SantaFe_Laser_9083_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0921_SantaFe_Laser_9083_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3554
+    },
+    {
+      "id": "0922_TideGauge_SeaLevel_8764_1__h3",
+      "dataset": "0922_TideGauge_SeaLevel_8764_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 8764,
+      "data_path": "data\\external\\09_other\\univariate\\0922_TideGauge_SeaLevel_8764_1.npy",
+      "model_path": "data\\models_r\\0922_TideGauge_SeaLevel_8764_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0922_TideGauge_SeaLevel_8764_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0922_TideGauge_SeaLevel_8764_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2296
+    },
+    {
+      "id": "0922_TideGauge_SeaLevel_8764_1__h12",
+      "dataset": "0922_TideGauge_SeaLevel_8764_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 8764,
+      "data_path": "data\\external\\09_other\\univariate\\0922_TideGauge_SeaLevel_8764_1.npy",
+      "model_path": "data\\models_r\\0922_TideGauge_SeaLevel_8764_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0922_TideGauge_SeaLevel_8764_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0922_TideGauge_SeaLevel_8764_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3457
+    },
+    {
+      "id": "0923_WaveEnergyConverters_Sydney_Power_7200_1__h3",
+      "dataset": "0923_WaveEnergyConverters_Sydney_Power_7200_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 7200,
+      "data_path": "data\\external\\09_other\\univariate\\0923_WaveEnergyConverters_Sydney_Power_7200_1.npy",
+      "model_path": "data\\models_r\\0923_WaveEnergyConverters_Sydney_Power_7200_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0923_WaveEnergyConverters_Sydney_Power_7200_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0923_WaveEnergyConverters_Sydney_Power_7200_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2393
+    },
+    {
+      "id": "0923_WaveEnergyConverters_Sydney_Power_7200_1__h12",
+      "dataset": "0923_WaveEnergyConverters_Sydney_Power_7200_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 7200,
+      "data_path": "data\\external\\09_other\\univariate\\0923_WaveEnergyConverters_Sydney_Power_7200_1.npy",
+      "model_path": "data\\models_r\\0923_WaveEnergyConverters_Sydney_Power_7200_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0923_WaveEnergyConverters_Sydney_Power_7200_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "TCN Block",
+          "State Space Model Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "Basis Projection"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0923_WaveEnergyConverters_Sydney_Power_7200_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3638
+    },
+    {
+      "id": "0924_GasTurbine_CO_7346_1__h3",
+      "dataset": "0924_GasTurbine_CO_7346_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 7346,
+      "data_path": "data\\external\\09_other\\univariate\\0924_GasTurbine_CO_7346_1.npy",
+      "model_path": "data\\models_r\\0924_GasTurbine_CO_7346_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0924_GasTurbine_CO_7346_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0924_GasTurbine_CO_7346_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2373
+    },
+    {
+      "id": "0924_GasTurbine_CO_7346_1__h12",
+      "dataset": "0924_GasTurbine_CO_7346_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 7346,
+      "data_path": "data\\external\\09_other\\univariate\\0924_GasTurbine_CO_7346_1.npy",
+      "model_path": "data\\models_r\\0924_GasTurbine_CO_7346_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0924_GasTurbine_CO_7346_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "TCN Block"
+        ],
+        "E": "Sequential Composition",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0924_GasTurbine_CO_7346_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3534
+    },
+    {
+      "id": "0925_MaunaLoa_CO2_2284_1__h3",
+      "dataset": "0925_MaunaLoa_CO2_2284_1",
+      "horizon": 3,
+      "channels": 1,
+      "length": 2284,
+      "data_path": "data\\external\\09_other\\univariate\\0925_MaunaLoa_CO2_2284_1.npy",
+      "model_path": "data\\models_r\\0925_MaunaLoa_CO2_2284_1\\h3\\candidate_model.py",
+      "weights_path": "data\\models_r\\0925_MaunaLoa_CO2_2284_1\\h3\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Differencing",
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0925_MaunaLoa_CO2_2284_1\\h3\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 2276
+    },
+    {
+      "id": "0925_MaunaLoa_CO2_2284_1__h12",
+      "dataset": "0925_MaunaLoa_CO2_2284_1",
+      "horizon": 12,
+      "channels": 1,
+      "length": 2284,
+      "data_path": "data\\external\\09_other\\univariate\\0925_MaunaLoa_CO2_2284_1.npy",
+      "model_path": "data\\models_r\\0925_MaunaLoa_CO2_2284_1\\h12\\candidate_model.py",
+      "weights_path": "data\\models_r\\0925_MaunaLoa_CO2_2284_1\\h12\\original_weights_s2026.pth",
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "E": "Single Block",
+        "C": "MLP Head"
+      },
+      "source_model": "external_test_code\\result\\models_R\\0925_MaunaLoa_CO2_2284_1\\h12\\law_s2026\\candidate_model.py",
+      "source_seed": 2026,
+      "meta_features": null,
+      "meta_feature_note": "Historical meta-feature timing is unverified; features are not copied to the agent and R architecture remains fixed.",
+      "original_params": 3437
+    }
+  ]
+}

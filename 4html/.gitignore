@@ -1,0 +1,12 @@
+# User uploads, generated results and local environment
+/runs/
+*.log
+.runtime/
+__pycache__/
+*.pyc
+preview*.png
+checks/
+.venv/
+venv/
+.env
+.env.*

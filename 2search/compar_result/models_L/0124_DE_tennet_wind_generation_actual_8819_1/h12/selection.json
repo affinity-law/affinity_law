@@ -1,0 +1,93 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "7d7bc4f464b8b3f06697bd20e0520365668c8009f70d82c4ce486f3b3f7adc99",
+    "data": "678263885c9f23a2dccd41980df89f727343c86ebcaee109c841870406aca596",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Differencing"
+    ],
+    "B": [
+      "TCN Block"
+    ],
+    "C": "Basis Projection",
+    "E": "Single Block"
+  },
+  "params": 3521,
+  "best_val_rmse": 1.0234318670051032,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.0271914555390935
+    },
+    {
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.036594918478623
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.0234318670051032
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.0255511401757285
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing",
+          "RevIN"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.0375204088434562
+    }
+  ]
+}

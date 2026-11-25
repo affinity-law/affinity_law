@@ -1,0 +1,80 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "ae0884ed9c09c3fd7c7aa0835f06c001d069e7dbc3f1b7f9ab020e1b52fa0e70",
+    "data": "57f7be162b25105216ac92cb2d334b33a552b4783657b76203e11c18d9841186",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Z-score"
+    ],
+    "B": [
+      "Basis Block"
+    ],
+    "C": "MLP Head",
+    "E": "Single Block"
+  },
+  "params": 6508,
+  "best_val_rmse": 1.7004439814957983,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.7106293482883925
+    },
+    {
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.7004439814957983
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Transformer Encoder Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.7351635514601234
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing",
+          "Z-score"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 1.708919818411806
+    }
+  ]
+}

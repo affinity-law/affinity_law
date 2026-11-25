@@ -1,0 +1,199 @@
+{
+  "task": {
+    "time_lag": 12,
+    "pre_len": 12,
+    "station_num": 1,
+    "univariate": true,
+    "evaluate_on_normalized_data": false,
+    "evaluation_data_space": "original",
+    "metric_note": "overall_metrics, feature_wise_worst_error, regime_error, residual_diagnostics, npy saving, and plotting are all based on final_preds/final_targets after overlapping window averaging; raw_window_metrics are computed directly on non-averaged raw windows for easy alignment with common baseline models; horizon_wise_metrics are computed directly on non-averaged raw_preds_std/raw_targets_std for use in the next round of LLM-based diagnosis of errors at different prediction horizons."
+  },
+  "evaluation_space": {
+    "data_space": "original",
+    "raw_window_data_space": "original",
+    "test_mae_final": 1.6171185854111174,
+    "test_mae_raw_windows": 1.7689229249954224
+  },
+  "raw_window_metrics": {
+    "data_space": "original",
+    "metric_note": "Computed directly on raw_preds/raw_targets without overlapping averaging; wmape is a ratio, wmape_percent is a percentage.",
+    "mae_rmse_wmape": {
+      "mae": 1.7689229249954224,
+      "rmse": 5.3717803955078125,
+      "wmape": 0.06082773953676224,
+      "wmape_percent": 6.0827741622924805
+    },
+    "all_metrics": {
+      "rmse": 5.3717803955078125,
+      "mae": 1.7689229249954224,
+      "wmape": 0.06082773953676224,
+      "smape": 0.6228210926055908
+    }
+  },
+  "overlapping_average_metrics": {
+    "data_space": "original",
+    "metric_note": "Apply average_future_steps() to overlapping window predictions first, then compute metrics; this is also the convention used by existing overall_metrics and plotting. wmape is a ratio, wmape_percent is a percentage.",
+    "mae_rmse_wmape": {
+      "mae": 1.6171185854111174,
+      "rmse": 5.267575695559004,
+      "wmape": 0.05560351585520122,
+      "wmape_percent": 5.560351585520122
+    },
+    "all_metrics": {
+      "rmse": 5.267575695559004,
+      "mae": 1.6171185854111174,
+      "wmape": 0.05560351585520122,
+      "smape": 0.6198242083976347
+    }
+  },
+  "overall_metrics": {
+    "rmse": 5.267575695559004,
+    "mae": 1.6171185854111174,
+    "wmape": 0.05560351585520122,
+    "smape": 0.6198242083976347
+  },
+  "feature_wise_worst_error": [
+    {
+      "rmse": 5.267575695559004,
+      "mae": 1.6171185854111174,
+      "wmape": 0.05560351585520122,
+      "smape": 0.6198242083976347,
+      "feature": 0
+    }
+  ],
+  "horizon_wise_metrics": [
+    {
+      "rmse": 0.4812602996826172,
+      "mae": 0.1610226333141327,
+      "wmape": 0.08041384816169739,
+      "smape": 0.09788811206817627,
+      "horizon": 1,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.4825558066368103,
+      "mae": 0.16129861772060394,
+      "wmape": 0.0805925726890564,
+      "smape": 0.09676425158977509,
+      "horizon": 2,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.4823763370513916,
+      "mae": 0.15726390480995178,
+      "wmape": 0.07859397679567337,
+      "smape": 0.09465767443180084,
+      "horizon": 3,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.47961509227752686,
+      "mae": 0.15811261534690857,
+      "wmape": 0.0789736732840538,
+      "smape": 0.0941518247127533,
+      "horizon": 4,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.48419448733329773,
+      "mae": 0.15743911266326904,
+      "wmape": 0.07859306037425995,
+      "smape": 0.09418428689241409,
+      "horizon": 5,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.4758477210998535,
+      "mae": 0.1536867916584015,
+      "wmape": 0.076618492603302,
+      "smape": 0.09158013761043549,
+      "horizon": 6,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.4775814116001129,
+      "mae": 0.15519298613071442,
+      "wmape": 0.07736086845397949,
+      "smape": 0.0917995348572731,
+      "horizon": 7,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.4781908094882965,
+      "mae": 0.16395209729671478,
+      "wmape": 0.08176853507757187,
+      "smape": 0.09877608716487885,
+      "horizon": 8,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.47842830419540405,
+      "mae": 0.16259653866291046,
+      "wmape": 0.08113358914852142,
+      "smape": 0.0960945263504982,
+      "horizon": 9,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.47870129346847534,
+      "mae": 0.1535581797361374,
+      "wmape": 0.07661089301109314,
+      "smape": 0.09164696931838989,
+      "horizon": 10,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.47673043608665466,
+      "mae": 0.15642885863780975,
+      "wmape": 0.0779949501156807,
+      "smape": 0.09317467361688614,
+      "horizon": 11,
+      "data_space": "normalized_raw_windows"
+    },
+    {
+      "rmse": 0.47854679822921753,
+      "mae": 0.15426920354366302,
+      "wmape": 0.07687074691057205,
+      "smape": 0.09115253388881683,
+      "horizon": 12,
+      "data_space": "normalized_raw_windows"
+    }
+  ],
+  "regime_error": {
+    "low": {
+      "rmse": 8.790100186603533,
+      "mae": 3.5532890624973783,
+      "wmape": 0.8328021053930433,
+      "smape": 1.754633096009499,
+      "sample_count": 285
+    },
+    "middle": {
+      "rmse": 1.1484497117758312,
+      "mae": 0.5837691734830568,
+      "wmape": 0.01379165352591901,
+      "smape": 0.01416777961602167,
+      "sample_count": 534
+    },
+    "high": {
+      "rmse": NaN,
+      "mae": NaN,
+      "wmape": 0.0,
+      "smape": NaN,
+      "sample_count": 0
+    },
+    "thresholds": {
+      "q33": 31.00000024910878,
+      "q66": 42.99999926387272
+    }
+  },
+  "residual_diagnostics": {
+    "bias_mean_error": 1.0916176935123396,
+    "residual_std": 5.153224671955874,
+    "lag1_autocorr": -0.01682175578610397,
+    "residual_target_corr": -0.13323214688096902
+  },
+  "saved_files": {
+    "final_predictions": "averaged_final_predictions.npy",
+    "final_targets": "averaged_final_targets.npy"
+  }
+}

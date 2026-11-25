@@ -1,0 +1,81 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "90db6c73d1e11b204ae88cae87a68be9ea4b51958696dc1ef05836ce547c2f23",
+    "data": "82b603ea7bb5126cb860a682533e9bddc3e567b6fdc825ed8f76d4be997e608e",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Differencing",
+      "Z-score"
+    ],
+    "B": [
+      "Basis Block"
+    ],
+    "C": "MLP Head",
+    "E": "Single Block"
+  },
+  "params": 6508,
+  "best_val_rmse": 0.159706211693552,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.1736301270836303
+    },
+    {
+      "spec": {
+        "A": [
+          "Z-score"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.16596213544320124
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.17581451903621612
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing",
+          "Z-score"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.159706211693552
+    }
+  ]
+}

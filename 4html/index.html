@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff6a00">
+  <meta name="description" content="基于数据特征与研究规律的模块化时间序列预测工作台。导入数据、查看推荐依据、固定架构调参、导出 PyTorch 模型。">
+  <title>affinity law | Model Workspace</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23ff6a00'/%3E%3Cpath d='M6 18h5l3-9 4 15 3-9h5' fill='none' stroke='white' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/research-data.js"></script>
+  <script defer src="assets/output-english.js"></script>
+  <script defer src="assets/i18n.js"></script>
+  <script defer src="performance.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#workbench" data-view="workbench" aria-label="affinity law home" translate="no"><span class="brand-symbol"><svg viewBox="0 0 32 32"><path d="M4 18h6l4-11 5 19 4-13h5"/></svg></span><span>affinity law<small>RESEARCH CONSOLE</small></span></a>
+
+    <nav class="main-nav" aria-label="主导航">
+      <button data-view="workbench" class="active"><i data-icon="grid"></i>模型工作台 <span class="nav-dot"></span></button>
+      <button data-view="history"><i data-icon="history"></i>历史分析 <span class="nav-count" id="history-count">—</span></button>
+      <details class="sidebar-resources" open><summary>资料与帮助</summary><button data-view="library"><i data-icon="layers"></i>模块库 <span class="nav-count" id="module-count"></span></button>
+      <button data-view="evidence"><i data-icon="book"></i>规律与证据</button>
+      <button data-view="guide"><i data-icon="compass"></i>使用指南</button></details>
+    </nav>
+
+    <div class="sidebar-bottom">
+
+      <button class="connection-button" id="connection-open"><span class="status-dot" id="connection-dot"></span><span id="connection-label">本地工作台</span><i data-icon="settings"></i></button>
+      <div class="profile"><span class="avatar">研</span><span>科研工作者<small>Research workspace</small></span><span class="profile-mark">↗</span></div>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">研究空间 <span>/</span> <strong id="page-name">模型工作台</strong></div><label class="language-control"><span>界面语言</span><select id="language-select" aria-label="界面语言"><option value="en" translate="no">English</option><option value="zh" translate="no">简体中文</option></select></label><div class="topbar-right"><span class="version-pill">研究协议已固定</span><button class="text-button" data-view="guide"><i data-icon="help"></i><span>快速上手</span></button><span class="top-avatar">R</span></div></header>
+    <main id="main" tabindex="-1">
+      <section class="view" id="view-workbench">
+        <div class="hero"><div><div class="eyebrow">FORECASTING WORKSPACE</div><h1>模型工作台</h1><p>导入数据，一次运行即可获得模型与预测效果。</p></div><button class="button secondary" data-view="history"><i data-icon="history"></i>查看历史分析</button></div>
+        <div class="workflow" id="workflow" aria-label="建模步骤"></div>
+        <div class="session-banner" id="session-banner" hidden></div>
+
+        <section class="step-panel" id="step-0">
+          <div class="section-heading"><div><span class="section-kicker">01 / DATA IMPORT</span><h2>准备本次建模</h2><p>选择数据与预测设置，然后开始建模。</p></div><span class="small-label"><span class="tiny-dot"></span> 支持单变量与多变量</span></div>
+          <div id="setup-fields"><div class="import-grid">
+            <div class="card import-card"><div class="card-title"><h3><i data-icon="upload"></i>导入数据</h3><span class="chip neutral">本次研究</span></div>
+              <div id="drop-zone" class="drop-zone"><div class="upload-illustration"><i data-icon="file-chart"></i><span>+</span></div><h3>将时间序列文件拖到这里</h3><p>支持 .npy、.csv · 每行一个时间点，每列一个变量</p><button class="button primary" id="choose-file"><i data-icon="plus"></i>选择本地文件</button><span class="upload-footnote">最大 50 MB · 按原始时间顺序读取</span><input type="file" id="file-input" accept=".npy,.csv" hidden></div>
+              <div class="file-summary" id="file-summary" hidden></div>
+              <div class="upload-error" id="upload-error" role="alert" hidden></div>
+
+              <div class="import-tip"><i data-icon="info"></i><p>CSV 可有表头和首列时间戳，变量列请使用无缺失的数值。</p></div>
+            </div>
+            <aside class="card protocol-card"><div class="card-title"><h3>模型设置</h3></div>
+              <label class="field-label">预测未来多少步</label><div class="segmented" id="horizon"><button class="selected" data-horizon="3" aria-pressed="true">3 步</button><button data-horizon="12" aria-pressed="false">12 步</button></div>
+              <fieldset class="tuning-choices simple-tuning"><legend class="field-label">是否调参</legend>
+                <label class="tuning-choice selected"><input type="radio" name="tuning" value="off" checked><span><b>不调参</b><small>使用默认参数，训练并评估</small></span><span class="radio-mark"></span></label>
+                <label class="tuning-choice"><input type="radio" name="tuning" value="on"><span><b>自动调参</b><small>优化参数后评估，耗时更长</small></span><span class="radio-mark"></span></label>
+              </fieldset>
+              <p class="tuning-estimate">调参预计需要 0.5–2 小时，实际耗时取决于数据量与硬件。</p>
+              <button type="button" class="text-button tuning-key-button" id="edit-api-key" hidden>重新填写 DeepSeek API key</button>
+              <button class="button primary full" id="start-analysis" disabled>开始建模 <i data-icon="arrow-right"></i></button>
+              <details class="setup-details"><summary>运行设置说明</summary><p>默认输入 12 步，按 60% / 20% / 20% 划分数据。默认参数使用三个随机种子评估，每次最多 300 轮、早停 15。</p><p id="tuning-help" hidden>调参采用 3par 的双种子筛选。前四名和默认配置用第三个种子复验，按验证集 RMSE 选优。输入长度可为 12 / 32 / 64 步，选择自动调参后，在弹窗中填写自己的 DeepSeek API key。</p></details>
+            </aside>
+          </div>
+          <details class="sample-picker"><summary>没有数据？使用项目示例</summary><div class="example-grid" id="example-grid"></div></details>
+</div><div id="analysis-job" aria-live="polite" hidden></div>
+        </section>
+
+
+
+
+
+
+
+        <section class="step-panel" id="step-4" hidden>
+          <div class="export-heading"><div><h2>建模结果</h2><p id="export-subtitle"></p></div><button class="button primary" id="download-model"><i data-icon="download"></i>下载模型 .py</button></div>
+          <div class="export-layout"><details class="card code-card result-detail"><summary>查看模型代码与使用方式</summary><div class="card-title"><h3 id="code-filename">candidate_model.py</h3><button class="text-button" id="copy-code">复制代码</button></div><pre id="code-preview" tabindex="0"></pre><div class="code-usage"><p id="usage-example"></p><p id="download-note"></p><div id="export-facts" hidden></div></div></details></div>
+          <details class="card result-detail" id="research-details"><summary>查看数据特征与推荐依据</summary>
+            <div class="research-detail-content research-brief">
+              <h3>关键数据特征</h3><div id="feature-grid" class="feature-summary"></div>
+              <h3>推荐理由</h3><div id="recommendation-grid" class="recommendation-brief"></div>
+            </div>
+          </details>
+          <div class="action-bar"><button class="button secondary" id="download-report">下载完整报告</button><button class="button secondary" id="new-study">开始新的建模</button></div>
+        </section>
+      </section>
+
+      <section class="view" id="view-history" hidden>
+        <div class="page-heading history-heading"><div><div class="eyebrow">LOCAL ANALYSIS ARCHIVE</div><h1>历史分析</h1><p>按数据集查看本机保存的分析、模型与评估记录。</p></div><button class="button secondary" id="refresh-history"><i data-icon="refresh"></i>刷新记录</button></div>
+        <div class="history-summary" id="history-summary" aria-live="polite"></div>
+        <div class="history-toolbar"><label class="search-input"><i data-icon="search"></i><input id="history-search" type="search" placeholder="搜索数据集或运行编号…" aria-label="搜索历史分析"></label><select id="history-status" aria-label="筛选运行状态"><option value="">全部状态</option><option value="completed">已完成</option><option value="running">运行中</option><option value="failed">失败</option><option value="interrupted">已中断</option><option value="cancelled">已取消</option></select></div>
+        <div id="history-list" aria-live="polite"></div>
+        <p class="source-note">记录来自本机 runs 目录，按最近更新时间排序。相同数据集的不同预测步数和调参记录归为一组。</p>
+      </section>
+
+      <section class="view" id="view-library" hidden><div class="page-heading"><div class="eyebrow">THE MODULE LIBRARY</div><h1>模块库</h1><p>按建模职责浏览原项目的模块与组合范式。</p></div><div class="library-filters" id="library-filters"></div><div class="module-grid" id="module-grid"></div></section>
+      <section class="view" id="view-evidence" hidden><div class="page-heading"><div class="eyebrow">RESEARCH EVIDENCE</div><h1>规律与证据</h1><p>展示当前 L 流程使用的规律、完整条件和合并发现统计。</p></div><div class="evidence-toolbar"><label class="search-input"><i data-icon="search"></i><input id="rule-search" placeholder="搜索模块、特征或条件…" aria-label="搜索规律"></label><select id="rule-stage" aria-label="筛选阶段"><option value="">全部阶段</option><option>A</option><option>B</option><option>C</option><option>E</option></select><select id="rule-grade" aria-label="筛选证据等级"><option value="">全部等级</option><option>S</option><option>A</option></select><span id="rule-count"></span></div><div id="rules-list"></div><p class="source-note">来源：2search/connect/document_summary.csv 与合并发现统计表。</p></section>
+      <section class="view" id="view-guide" hidden><div class="page-heading"><div class="eyebrow">A REPRODUCIBLE WORKFLOW</div><h1>从导入到导出</h1><p>让数据、规律、模型与运行设置始终可追溯。</p></div><div class="guide-grid"><article class="card"><span class="guide-number">01</span><h3>准备时间序列</h3><p>NPY 支持 [时间点] 或 [时间点, 变量] 的数值数组。CSV 可有表头与首列时间戳；不支持缺失值、无穷值和非数值变量。网页不会悄悄插值或重排时间。</p></article><article class="card"><span class="guide-number">02</span><h3>了解运行模式</h3><p>项目示例使用已选定的 L 架构和历史测试记录。新数据通过 L 生成候选并按验证集 RMSE 选出架构。</p></article><article class="card"><span class="guide-number">03</span><h3>查看推荐依据</h3><p>只采用 S/A 级规律，排除反偏好角，再按等级和 lift_ci_lo 排序。A/B/C 未命中使用发现集频率默认，E 未命中使用 Single Block。D 逆变换从 A 自动推导。</p></article><article class="card"><span class="guide-number">04</span><h3>一次开始，自动完成</h3><p>在首页选择预测步数与是否调参，点击“开始建模”。工作台会自动衔接特征计算、模块选择、训练与评估，完成后打开结果页。</p></article><article class="card"><span class="guide-number">05</span><h3>复用模型与报告</h3><p>下载完整 .py 文件与包含特征、命中规则、架构和配置的 JSON 报告。源码需要项目原有 PyTorch 环境；默认源码不包含权重，不代表已完成训练。</p></article><article class="card"><span class="guide-number">↗</span><h3>在本机启动工作台</h3><p>从 GitHub 下载完整项目，按根目录说明搭建 Python 环境，再运行 python -B 4html/start.py，浏览器会自动打开。前端与原计算流程在同一台电脑运行，无需填写服务地址。</p><button class="button secondary compact" id="guide-connect">查看本地运行状态 <i data-icon="arrow-right"></i></button></article></div><div class="notice"><i data-icon="shield"></i><p>网页与连接层放在 4html，运行文件写入 4html/runs。项目原模型、算法、实验数据、历史结果和参数设置均保留。</p></div></section>
+      <footer class="footer"><span><span class="footer-symbol">∿</span> <span translate="no">affinity law</span> <span class="muted">/</span> 让模型选择可解释，让研究可以复现。</span><span>LOCAL RESEARCH WORKSPACE</span></footer>
+    </main>
+  </div>
+  <dialog id="connection-dialog"><div class="dialog-heading"><h2>本地运行状态</h2><button type="button" class="icon-button" id="connection-close" aria-label="关闭">×</button></div><p>在完整项目的根目录，激活已安装依赖的 Python 环境后运行：</p><p><code>python -B 4html/start.py</code></p><p>浏览器会自动打开本机工作台。保持启动终端运行，按 Ctrl+C 停止。单独双击 HTML 可以体验示例，实际计算需要此本地进程。</p><div id="connection-result" role="status"></div><div class="dialog-actions"><button type="button" class="button primary" id="connection-test">重新检查环境</button></div></dialog>
+  <dialog id="api-key-dialog" aria-labelledby="api-key-title" aria-describedby="api-key-description">
+    <form id="api-key-form">
+      <div class="dialog-heading"><h2 id="api-key-title">DeepSeek 调参设置</h2><button type="button" class="icon-button" id="api-key-close" aria-label="关闭">×</button></div>
+      <p id="api-key-description">填写自己的 DeepSeek API key，供本次调参使用。</p>
+      <label class="field-label" for="deepseek-api-key">DeepSeek API key</label>
+      <input id="deepseek-api-key" class="api-key-input" type="password" autocomplete="off" spellcheck="false" autocapitalize="none" required maxlength="512" placeholder="粘贴 DeepSeek API key" aria-describedby="api-key-privacy" autofocus>
+      <p class="api-key-note" id="api-key-privacy">密钥仅用于本次任务，不写入项目文件或浏览器存储。调参会向 DeepSeek 发送模型配置、特征摘要与验证结果，API 费用由你的账户承担。</p>
+      <p class="tuning-estimate">调参预计需要 0.5–2 小时，实际耗时取决于数据量与硬件。</p>
+      <div class="dialog-actions"><button type="button" class="button secondary" id="api-key-cancel">取消</button><button type="submit" class="button primary">确认</button></div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

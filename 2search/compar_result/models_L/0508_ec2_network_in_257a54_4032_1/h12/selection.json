@@ -1,0 +1,93 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "b79a1a0b43cffa609679b61f5330079440ddc9c4fa4d22a17448dfc4ef650f52",
+    "data": "cd841b9db2c83d2804a05931b99452ac24afe02e5308741662158bf2696d2f89",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "RevIN"
+    ],
+    "B": [
+      "State Space Model Block"
+    ],
+    "C": "Basis Projection",
+    "E": "Single Block"
+  },
+  "params": 3395,
+  "best_val_rmse": 0.0018198417366498036,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.005533547461350418
+    },
+    {
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.0018198417366498036
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "CNN Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.00410431315191214
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.004830330430324023
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing",
+          "RevIN"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.0025056242761944646
+    }
+  ]
+}

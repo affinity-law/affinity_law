@@ -1,0 +1,31 @@
+{
+  "context_length": 64,
+  "target_start_offset": 12,
+  "target_alignment": "split_start_plus_12_with_past_context_v1",
+  "horizons": [3, 12],
+  "train_ratio": 0.6,
+  "val_ratio": 0.2,
+  "point_forecast": "median_0.5",
+  "normalization": "training_segment_per_channel_zscore_float32",
+  "aggregation": "overlap_average",
+  "evaluation_space": "original",
+  "r_seeds": [2026, 2027, 2028],
+  "models": {
+    "timesfm3_0": {
+      "adapter": "timesfm3_0/model.py",
+      "checkpoint": "timesfm3_0/checkpoint",
+      "native_patch_length": 32,
+      "patch_count": 2,
+      "default_batch_size": 32,
+      "channel_mode": "official_multivariate_evaluator"
+    },
+    "moirai2_0": {
+      "adapter": "moirai2_0/model.py",
+      "checkpoint": "moirai2_0/checkpoint",
+      "native_patch_length": 16,
+      "patch_count": 4,
+      "default_batch_size": 256,
+      "channel_mode": "independent_univariate_per_channel"
+    }
+  }
+}

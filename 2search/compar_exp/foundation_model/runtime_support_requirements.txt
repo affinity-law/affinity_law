@@ -1,0 +1,17 @@
+# Core packages recorded from the author's Python 3.11 environment.
+# Install these normally; install runtime_requirements.txt with --no-deps.
+# PyTorch and the matching torchvision build are installed separately.
+numpy==2.1.2
+pandas==2.3.1
+scipy==1.16.1
+safetensors==0.8.0
+einops==0.8.1
+fsspec[http]==2026.6.0
+requests==2.32.5
+pydantic==2.12.5
+pillow==11.0.0
+PyYAML==6.0.2
+packaging==25.0
+typing_extensions==4.16.0
+tqdm==4.67.3
+setuptools==81.0.0

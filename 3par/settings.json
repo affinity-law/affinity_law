@@ -1,0 +1,55 @@
+{
+  "time_lag": 12,
+  "horizons": [3, 12],
+  "train_ratio": 0.6,
+  "val_ratio": 0.2,
+  "search": {
+    "trials": 32,
+    "screening_seeds": [2026, 2027],
+    "confirmation_seeds": [2028],
+    "confirmation_top_k": 4,
+    "probe_values": {
+      "time_lag": [32, 64],
+      "lr": [0.0003, 0.003],
+      "weight_decay": [0.0001, 0.003],
+      "batch_size": [8, 64],
+      "width_scale": [0.5, 1.5],
+      "lstm_layers": [2, 3],
+      "tcn_kernel": [2, 7],
+      "patch_profile": ["p2_s1", "p8_s4"]
+    }
+  },
+  "training": {
+    "short_epochs": 300,
+    "short_patience": 15,
+    "search_train_seed": 2026,
+    "final_seeds": [2026, 2027, 2028],
+    "mse_weight": 0.2,
+    "mae_weight": 0.8,
+    "device": "auto",
+    "cpu_threads": 2
+  },
+  "space": {
+    "time_lag": [12, 32, 64],
+    "lr": [0.0001, 0.0003, 0.001, 0.003, 0.005],
+    "weight_decay": [0.0, 0.00001, 0.0001, 0.001, 0.003],
+    "batch_size": [8, 16, 32, 64],
+    "width_scales": [0.5, 0.75, 1.0, 1.25, 1.5],
+    "lstm_layers": [1, 2, 3],
+    "tcn_kernel": [2, 3, 4, 5, 7],
+    "patch_profile": ["p2_s1", "p4_s2", "p6_s3", "p8_s4"],
+    "enforce_param_ratio": false
+  },
+  "agent": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 180,
+    "max_retries": 3,
+    "max_attempts": 2,
+    "max_changed_parameters": 2,
+    "request_options": {
+      "temperature": 0,
+      "response_format": {"type": "json_object"}
+    }
+  }
+}

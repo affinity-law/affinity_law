@@ -1,0 +1,81 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "9fea365c607ee58020de9249401749da72bc5bf9644c4c0ac63490359a3f8c43",
+    "data": "2ed3448b9c2f1236d14a007127099da1eb004e10980d52b24b350c050e10c4d1",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Differencing",
+      "RevIN"
+    ],
+    "B": [
+      "Basis Block"
+    ],
+    "C": "MLP Head",
+    "E": "Single Block"
+  },
+  "params": 5349,
+  "best_val_rmse": 0.2181789235249183,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.21845858397670956
+    },
+    {
+      "spec": {
+        "A": [
+          "RevIN"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.21908211417360715
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.21985757239460285
+    },
+    {
+      "spec": {
+        "A": [
+          "Differencing",
+          "RevIN"
+        ],
+        "B": [
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.2181789235249183
+    }
+  ]
+}

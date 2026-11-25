@@ -1,0 +1,93 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "83bd22a8570e39202602f6f5da77f3d641bed4bfe99f39cdfe478c4815bc34d8",
+    "data": "8ccff99de6402f482953e8e09fa1f113d40b7bdeec72ebf8c433d7f92baf9436",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Mask"
+    ],
+    "B": [
+      "TCN Block"
+    ],
+    "C": "Basis Projection",
+    "E": "Single Block"
+  },
+  "params": 4872,
+  "best_val_rmse": 0.7750605594983272,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.8385001834470315
+    },
+    {
+      "spec": {
+        "A": [
+          "Patch"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.8241043850089107
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "TCN Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.7750605594983272
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "MLP Head",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.8379775081266158
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask",
+          "Patch"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.8588943603456054
+    }
+  ]
+}

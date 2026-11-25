@@ -1,0 +1,8 @@
+﻿indicator_name,value
+distribution_shape_score,0.550713411719523
+trend_strength_score,0.1790547892094854
+stationarity_score,0.4399401718517633
+periodicity_score,0.5029248459661789
+temporal_dependence_score,0.5254912016864711
+noise_volatility_score,0.36347837043461145
+multivariate_structure_score,0.0

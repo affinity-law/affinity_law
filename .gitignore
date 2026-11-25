@@ -1,0 +1,34 @@
+# Local configuration and Python environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.cache/
+.env
+.env.*
+*.pem
+*.key
+*.log
+*.download
+.DS_Store
+Thumbs.db
+# Personal manuscript review material and editor settings
+/ai/
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Outputs from new runs
+/outputs/
+/1experiment/result/
+/1experiment/result_*/
+!/1experiment/result_csv/
+/2search/law_result/
+/3par/outputs/
+
+# Optional foundation-model dependencies, weights and new inference runs
+/2search/compar_exp/foundation_model/_runtime/
+*.safetensors
+/2search/compar_exp/foundation_model/*/outputs/*
+!/2search/compar_exp/foundation_model/*/outputs/r_aligned_context64_v1/

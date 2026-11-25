@@ -1,0 +1,216 @@
+{
+  "status": "completed",
+  "source_docx": "2search/connect/law.docx",
+  "n_rules": 29,
+  "n_displayed_rules": 27,
+  "family_rule_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P20",
+    "P21",
+    "P22",
+    "P23",
+    "P24",
+    "P25",
+    "P26",
+    "P27",
+    "P28",
+    "P29",
+    "P30"
+  ],
+  "displayed_rule_ids": [
+    "P01",
+    "P04",
+    "P02",
+    "P06",
+    "P08",
+    "P11",
+    "P07",
+    "P09",
+    "P10",
+    "P03",
+    "P05",
+    "P12",
+    "P17",
+    "P13",
+    "P14",
+    "P15",
+    "P20",
+    "P21",
+    "P23",
+    "P16",
+    "P24",
+    "P25",
+    "P26",
+    "P27",
+    "P28",
+    "P29",
+    "P30"
+  ],
+  "per_ai": {
+    "deepseek": {
+      "passes_revalidation": 27,
+      "passes_S_or_A": 5,
+      "grades": {
+        "S": 3,
+        "B": 16,
+        "C": 7,
+        "D": 1,
+        "A": 2
+      },
+      "candidate_rows": 1578,
+      "datasets": 263,
+      "dataset_config_units": 526
+    },
+    "chatgpt": {
+      "passes_revalidation": 26,
+      "passes_S_or_A": 3,
+      "grades": {
+        "B": 20,
+        "S": 2,
+        "C": 3,
+        "D": 3,
+        "A": 1
+      },
+      "candidate_rows": 1578,
+      "datasets": 263,
+      "dataset_config_units": 526
+    },
+    "gemini": {
+      "passes_revalidation": 20,
+      "passes_S_or_A": 10,
+      "grades": {
+        "S": 7,
+        "B": 8,
+        "A": 3,
+        "C": 2,
+        "D": 9
+      },
+      "candidate_rows": 1578,
+      "datasets": 263,
+      "dataset_config_units": 526
+    }
+  },
+  "validated_ai_distribution": {
+    "3": 17,
+    "2": 10,
+    "1": 2
+  },
+  "fdr_family": "Each AI separately; all 29 original fixed rules, ascending P ID order; document filtering happens after correction.",
+  "threshold_policy": "Use the full-precision thresholds exported by 04; do not rediscover or use rounded display thresholds.",
+  "parameters": {
+    "AI_TYPES": [
+      "deepseek",
+      "chatgpt",
+      "gemini"
+    ],
+    "INCLUDE_COMBINED": true,
+    "VERBOSE": false,
+    "MAX_DEPTH": 3,
+    "MIN_LEAF": 60,
+    "MIN_REL_GAIN": 0.01,
+    "MIN_RULE_LIFT": 1.15,
+    "SEED": 1234,
+    "THRESHOLD_ROUND": 3,
+    "MIN_RULE_N": 60,
+    "MIN_DISCOVERY_DATASETS": 15,
+    "PURITY_MIN_SUB": 15,
+    "PURITY_MIN_FRAC": 0.1,
+    "PURITY_LIFT_MAX": 0.9,
+    "PURITY_MAX_SPLIT": 2,
+    "CANONICALIZE": true,
+    "MIN_PURITY_DATASETS": 12,
+    "B_PERM": 1000,
+    "PERM_SEED": 2026,
+    "FDR_ALPHA": 0.1,
+    "N_BOOT": 1000,
+    "BOOT_SEED": 1234,
+    "CELLS": [
+      [
+        "uni",
+        "12_3"
+      ],
+      [
+        "uni",
+        "12_12"
+      ],
+      [
+        "multi",
+        "12_3"
+      ],
+      [
+        "multi",
+        "12_12"
+      ]
+    ],
+    "MIN_CELL_DATASETS": 5,
+    "FDR_STRONG": 0.05,
+    "FDR_EXPLORATORY": 0.1,
+    "REPRO_MIN": 0.8,
+    "N_CELLS_TOTAL": 4,
+    "MIN_STRONG_COVERAGE": 0.1,
+    "MIN_STRONG_CELL_DATASETS": 10,
+    "MIN_STABLE_DATASET_FRACTION": 0.08,
+    "MIN_CANDIDATE_DATASETS": 12
+  },
+  "purity_min_frac_used": 0.1,
+  "validation_criteria": "q<0.10; repro>=0.80; effective cells>=2; covered datasets>=12",
+  "source_files_unchanged": true,
+  "input_sha256": {
+    "2search/connect/law.docx": "14ce0ad16462c64dfb3f125c903033b8b31372af46b29bf091acf1c147476b96",
+    "2search/connect/04_pooled_all_4734/outputs/pooled_all_fixed_rules.csv": "f3277be6c162238efb5754094d9b254afb970958d609d320fd6cf0015a6c5b14",
+    "2search/connect/04_pooled_all_4734/outputs/pooled_all_law_table.csv": "2084e57e8a1c6279b2a5d2d02e05351292c912e7d9bcfaa74b3b8a192f831a7a",
+    "2search/connect/04_pooled_all_4734/outputs/run_summary.json": "38bc2a8f64a0d385a67b16c449aaee21cec04841b1ed0e23141d5a06e2fc481e",
+    "2search/connect/01_exact_rule_validation/rule_family.json": "8303252582a7ecd9ae23a934f1d54b80006d672e858b3b3aa23c6f1b0134d60a",
+    "2search/connect/01_exact_rule_validation/run.py": "daecfd30e83147958c95f85e050f66c36d43b4f0c4141a1f7df55b5fa009e1a4",
+    "2search/connect/support/connect_common.py": "fe1220d8097ec046f2d87722e9733e9d1c6ea278ed5f5b779939f5546aadfea3",
+    "2search/connect/support/label_reference.json": "d667fdc51f5f16a5aa0372f1f5dce0a181d21ccf045b22e4ec4760b2386d23b3",
+    "2search/law_search/build_law_table.py": "b8d11d884d3a7b5df12f38af6e36d95a5538b4dd4d692165b32450eff18864d2",
+    "2search/law_search/config.py": "b3911d638740d3933e69e00851a1933034d65b90288322d0001424ecb8edae97",
+    "2search/law_search/discover_rules.py": "cc997f0b5e5aa20f38f44ac4d118b593b3153f0e437f7ab243db5b8e41435c7a",
+    "2search/law_search/main.py": "5d7788c41724ed1a1e782a3f49b6ea7212373182e2230132c158487ef32b0e20",
+    "2search/law_search/prepare_data.py": "f31e005a67ab97fb94b1da37c8e6999a478a9530b6a680eec68f0e620114cd92",
+    "2search/law_search/inputs/chatgpt_12_12_multivariate.csv": "b3a04957f5a88a55f5669252b10f84feb3d204dfc45f507f5873d52a216145f6",
+    "2search/law_search/inputs/chatgpt_12_12_univariate.csv": "fa57900ea1a043c6e2839970d11b9fca1d666e235f58aa401aeaa975117395f2",
+    "2search/law_search/inputs/chatgpt_12_3_multivariate.csv": "235cb580f3edfa763cb4ee05e8de16e3d3c59dc980fcc39c497bd6a41c9a7f81",
+    "2search/law_search/inputs/chatgpt_12_3_univariate.csv": "c727fb3849bc60b7b9cfaecaa8250659cf84d1d9e54b68ee7757086eef39cd6a",
+    "2search/law_search/inputs/deepseek_12_12_multivariate.csv": "d1072d0f286d56832a721e3ce453df25a8db080e4fee4250111ac57c1d9e411b",
+    "2search/law_search/inputs/deepseek_12_12_univariate.csv": "e8dbcf7d1503941d48cb978372dc08221e566c4b52f03e65f857d8efb374f8a9",
+    "2search/law_search/inputs/deepseek_12_3_multivariate.csv": "bd150346e4f63b974574ddb6ceac66a01773f2a501ca9be399aefc257aa719ea",
+    "2search/law_search/inputs/deepseek_12_3_univariate.csv": "d1e495b3ff14a393c4395a3692dad2d823be9267ea5ecce80a0dab7ece295f1c",
+    "2search/law_search/inputs/gemini_12_12_multivariate.csv": "7220d74cf91f08569e9e0c2d41f6c9e0ca342eec182d7ca68094ee1d36754a17",
+    "2search/law_search/inputs/gemini_12_12_univariate.csv": "247f10aec9e2259fe1a80bedcfecae037befb444ad8b77e41c2111b1fa1ea7e8",
+    "2search/law_search/inputs/gemini_12_3_multivariate.csv": "532def8fc6d0dc9e7e04d751acc23c7ea6d41154f86157cce03765373531742d",
+    "2search/law_search/inputs/gemini_12_3_univariate.csv": "4fc3e422b691ee97805a496a93bef54012e2528ec507d72249d92dd17f08ab2b"
+  },
+  "runtime": {
+    "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.1.2",
+    "pandas": "2.3.1",
+    "sklearn": "1.8.0"
+  },
+  "document_check": {
+    "displayed_rules": 27,
+    "ai_cells_checked": 81,
+    "forecast_cells_checked": 108,
+    "mismatches": [],
+    "status": "passed"
+  },
+  "limitations": "Same-source per-AI revalidation; the AI datasets also contributed to pooled discovery, so this is not independent validation."
+}

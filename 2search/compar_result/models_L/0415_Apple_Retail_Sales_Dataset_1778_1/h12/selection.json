@@ -1,0 +1,112 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "930fd1bed5a4914fa0c687e8062d2944d0fff10fd859e70f5376a09a11e96ee2",
+    "data": "aa51ff57ac0309a666963282f70b8b1dbac1cfcce970c85e32fb21479ba7564c",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Mask"
+    ],
+    "B": [
+      "Basis Block",
+      "State Space Model Block"
+    ],
+    "C": "Basis Projection",
+    "E": "Parallel Additive Branches"
+  },
+  "params": 6689,
+  "best_val_rmse": 0.9792187046258013,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Basis Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.97975268702799
+    },
+    {
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Basis Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.9808313264573854
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "Basis Block",
+          "State Space Model Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.9792187046258013
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Basis Block"
+        ],
+        "C": "MLP Head",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.9814695755313982
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "State Space Model Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.9818614920987733
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask",
+          "Identity"
+        ],
+        "B": [
+          "State Space Model Block",
+          "Basis Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.97975268702799
+    }
+  ]
+}

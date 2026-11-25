@@ -1,0 +1,162 @@
+{
+  "version": "final_compact_with_english_roles_v1.0",
+  "description": "Compact module library for LLM-assisted modular time-series forecasting. Each module only includes a minimal English functional description.",
+  "modules": {
+    "A_input_sequence_processing": [
+      {
+        "module_name": "Identity",
+        "inverse_required": false,
+        "role": "Pass the input sequence unchanged."
+      },
+      {
+        "module_name": "Z-score",
+        "inverse_required": true,
+        "role": "Standardize the sequence using mean and standard deviation."
+      },
+      {
+        "module_name": "RevIN",
+        "inverse_required": true,
+        "role": "Apply reversible instance normalization to each sample."
+      },
+      {
+        "module_name": "Differencing",
+        "inverse_required": true,
+        "role": "Compute first-order or lagged differences of the sequence."
+      },
+      {
+        "module_name": "Series Decomposition",
+        "inverse_required": true,
+        "role": "Decompose the sequence into trend and residual components."
+      },
+      {
+        "module_name": "Patch",
+        "inverse_required": false,
+        "role": "Split the sequence into fixed-length patches."
+      },
+      {
+        "module_name": "Mask",
+        "inverse_required": false,
+        "role": "Apply masks to selected positions or variables."
+      }
+    ],
+    "B_structure_modeling": [
+      {
+        "module_name": "Linear Block",
+        "inverse_required": false,
+        "role": "Model the mapping from history to future with a linear transformation."
+      },
+      {
+        "module_name": "MLP Block",
+        "inverse_required": false,
+        "role": "Apply multilayer perceptrons for nonlinear feature mapping."
+      },
+      {
+        "module_name": "CNN Block",
+        "inverse_required": false,
+        "role": "Extract local temporal features with one-dimensional convolution."
+      },
+      {
+        "module_name": "TCN Block",
+        "inverse_required": false,
+        "role": "Model temporal dependencies with dilated causal convolutions."
+      },
+      {
+        "module_name": "GRU Block",
+        "inverse_required": false,
+        "role": "Update hidden states recurrently with gated recurrent units."
+      },
+      {
+        "module_name": "LSTM Block",
+        "inverse_required": false,
+        "role": "Update hidden states recurrently with gated memory cells."
+      },
+      {
+        "module_name": "State Space Model Block",
+        "inverse_required": false,
+        "role": "Represent sequence dynamics with state-space recurrence."
+      },
+      {
+        "module_name": "Transformer Encoder Block",
+        "inverse_required": false,
+        "role": "Encode sequence representations with self-attention and feed-forward layers."
+      },
+      {
+        "module_name": "Basis Block",
+        "inverse_required": false,
+        "role": "Represent forecasts through combinations of basis functions."
+      }
+    ],
+    "C_prediction_generation": [
+      {
+        "module_name": "Linear Head",
+        "inverse_required": false,
+        "role": "Map hidden representations to forecasts with a linear projection."
+      },
+      {
+        "module_name": "MLP Head",
+        "inverse_required": false,
+        "role": "Map hidden representations to forecasts through multilayer perceptrons."
+      },
+      {
+        "module_name": "Basis Projection",
+        "inverse_required": false,
+        "role": "Project coefficients onto basis functions to generate forecasts."
+      }
+    ],
+    "D_output_adaptation": [
+      {
+        "module_name": "Inverse Z-score",
+        "inverse_required": false,
+        "role": "Restore values from Z-score standardized scale."
+      },
+      {
+        "module_name": "Inverse RevIN",
+        "inverse_required": false,
+        "role": "Restore values from RevIN-normalized scale."
+      },
+      {
+        "module_name": "Inverse Differencing",
+        "inverse_required": false,
+        "role": "Reconstruct sequence values from differenced outputs."
+      },
+      {
+        "module_name": "Decomposition Recomposition",
+        "inverse_required": false,
+        "role": "Recombine predicted components into the final output."
+      }
+    ],
+    "E_composition_paradigm": [
+      {
+        "module_name": "Single Block",
+        "inverse_required": false,
+        "role": "Use one structure module for modeling."
+      },
+      {
+        "module_name": "Sequential Composition",
+        "inverse_required": false,
+        "role": "Connect multiple structure modules in sequence."
+      },
+      {
+        "module_name": "Parallel Additive Branches",
+        "inverse_required": false,
+        "role": "Run multiple branches in parallel and add their outputs."
+      },
+      {
+        "module_name": "Residual Modeling",
+        "inverse_required": false,
+        "role": "Use a residual branch to correct the main branch output."
+      },
+      {
+        "module_name": "Gated Fusion",
+        "inverse_required": false,
+        "role": "Fuse multiple branch outputs using learned gating weights."
+      }
+    ]
+  },
+  "auto_output_adaptation": {
+    "Z-score": "Inverse Z-score",
+    "RevIN": "Inverse RevIN",
+    "Differencing": "Inverse Differencing",
+    "Series Decomposition": "Decomposition Recomposition"
+  }
+}

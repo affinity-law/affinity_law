@@ -1,0 +1,7 @@
+# Package versions for the published rule table. Use Python 3.11 or 3.12.
+numpy==2.1.2
+pandas==2.3.1
+scikit-learn==1.8.0
+scipy==1.16.1
+# Used by support/update_table_labels.py to maintain the Word table.
+python-docx==1.2.0

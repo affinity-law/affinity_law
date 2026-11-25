@@ -1,0 +1,14 @@
+* text=auto
+# Resume protocols hash Python and JSON source bytes; preserve their line endings.
+*.py -text
+*.md text eol=lf
+*.json -text
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.npy binary
+*.npz binary
+*.pth binary
+*.safetensors binary
+# CSV byte hashes identify the historical reference tables.
+*.csv -text

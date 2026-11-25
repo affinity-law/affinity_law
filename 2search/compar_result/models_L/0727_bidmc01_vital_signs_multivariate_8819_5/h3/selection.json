@@ -1,0 +1,112 @@
+{
+  "source_sha256": {
+    "rules": "10ea195660ae76ab3cec3710e0cb063f081a9431ea3986415f42cb14022a9ee9",
+    "pooled": "c748a50f521c3380c357d523325fe4fe7f34270d1377841e5a5e972ff97d07e4",
+    "features": "344ffdb7c1f2b4b466cc0af2aaadfe9349247a4cdc99b14bf101494f4ce7d86e",
+    "data": "e1ec1e462dc7997212c9e79fd28272841ddacce283a10355980959bbcf3bbc06",
+    "select_arch.py": "50ab9393a9415629243c09fa03c117bf11afe7fdd55970a4c227ddd9605d513e",
+    "model_assembler.py": "84ee770fd41c17cb8f95d4064b44a8dc5db09f0529a06ce7c623ff696696de30",
+    "config.py": "fc405803137374079f44598d2cac013a68190c942193932a3065486ba04ab846",
+    "train_one.py": "a9210144a9fabb84ec7caf27756f95b5e7b062970cfe4b3d26da8343964715c5",
+    "baseline": "58e479f4288377112bde517f038b78e8d5cef84046ec5faa3eff6bb267869eb0"
+  },
+  "spec": {
+    "A": [
+      "Identity"
+    ],
+    "B": [
+      "Linear Block",
+      "CNN Block"
+    ],
+    "C": "Basis Projection",
+    "E": "Parallel Additive Branches"
+  },
+  "params": 4161,
+  "best_val_rmse": 0.26415574648337437,
+  "candidate_results": [
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "Linear Block",
+          "CNN Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.3991162227955285
+    },
+    {
+      "spec": {
+        "A": [
+          "Identity"
+        ],
+        "B": [
+          "Linear Block",
+          "CNN Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.26415574648337437
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "CNN Block",
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.4784275937632641
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "Linear Block",
+          "CNN Block"
+        ],
+        "C": "MLP Head",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.36845485680222084
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask"
+        ],
+        "B": [
+          "Linear Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Single Block"
+      },
+      "val_rmse": 0.7655467676979448
+    },
+    {
+      "spec": {
+        "A": [
+          "Mask",
+          "Identity"
+        ],
+        "B": [
+          "Linear Block",
+          "CNN Block"
+        ],
+        "C": "Basis Projection",
+        "E": "Parallel Additive Branches"
+      },
+      "val_rmse": 0.3991162227955285
+    }
+  ]
+}
