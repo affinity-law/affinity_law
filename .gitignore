@@ -13,7 +13,8 @@ venv/
 *.download
 .DS_Store
 Thumbs.db
-# Personal manuscript review material and editor settings
+
+# Local working files and editor settings
 /ai/
 .idea/
 .vscode/
@@ -26,6 +27,12 @@ Thumbs.db
 !/1experiment/result_csv/
 /2search/law_result/
 /3par/outputs/
+
+# Local workbench uploads, results and preview artifacts
+/4html/runs/
+/4html/**/.runtime/
+/4html/**/preview*.png
+/4html/**/checks/
 
 # Optional foundation-model dependencies, weights and new inference runs
 /2search/compar_exp/foundation_model/_runtime/
